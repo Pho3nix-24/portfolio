@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Ingeniería de Sistemas & Ciberseguridad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-mono-tech {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .glow-effect:hover {
+            box-shadow: 0 0 25px rgba(34, 211, 238, 0.25);
+            border-color: rgba(34, 211, 238, 0.4);
+        }
+        /* Grid background style */
+        .cyber-grid {
+            background-size: 50px 50px;
+            background-image: 
+                linear-gradient(to right, rgba(148, 163, 184, 0.02) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(148, 163, 184, 0.02) 1px, transparent 1px);
+        }
+        /* Spotlight mouse follow */
+        .ambient-glow {
+            background: radial-gradient(circle 600px at var(--mouse-x, 50%) var(--mouse-y, 30%), rgba(6, 182, 212, 0.07), transparent 80%);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #020617;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #06b6d4;
+        }
+        .modal-active {
+            overflow: hidden;
+        }
+        @keyframes modal-fade-in {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .modal-animate-in {
+            animation: modal-fade-in 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-cyan-500 selection:text-slate-950 antialiased cyber-grid relative">
+    <div class="fixed inset-0 ambient-glow pointer-events-none z-0"></div>
+
+    <header class="fixed top-0 left-0 w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-900 z-50 transition-all">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="font-mono-tech text-cyan-400 font-bold text-lg">&lt;SYS.ENG /&gt;</span>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-400">
+                <a href="#inicio" class="hover:text-cyan-400 transition-colors">Inicio</a>
+                <a href="#sobre-mi" class="hover:text-cyan-400 transition-colors">Sobre Mí</a>
+                <a href="#proyectos" class="hover:text-cyan-400 transition-colors">Proyectos</a>
+                <a href="#habilidades" class="hover:text-cyan-400 transition-colors">Habilidades</a>
+                <a href="#contacto" class="hover:text-cyan-400 transition-colors">Contacto</a>
+            </nav>
+            <!-- Hamburguesa para móviles -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-400 hover:text-cyan-400 focus:outline-none" aria-label="Abrir menú">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+        <!-- Menú Móvil -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-900 bg-slate-950/95 backdrop-blur-lg px-6 py-4 space-y-3">
+            <a href="#inicio" class="block text-slate-400 hover:text-cyan-400 transition-colors text-sm font-medium py-2">Inicio</a>
+            <a href="#sobre-mi" class="block text-slate-400 hover:text-cyan-400 transition-colors text-sm font-medium py-2">Sobre Mí</a>
+            <a href="#proyectos" class="block text-slate-400 hover:text-cyan-400 transition-colors text-sm font-medium py-2">Proyectos</a>
+            <a href="#habilidades" class="block text-slate-400 hover:text-cyan-400 transition-colors text-sm font-medium py-2">Habilidades</a>
+            <a href="#contacto" class="block text-slate-400 hover:text-cyan-400 transition-colors text-sm font-medium py-2">Contacto</a>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pt-24 pb-16 space-y-32">
+
+        <section id="inicio" class="min-h-[70vh] flex flex-col justify-center space-y-6 py-12">
+            <div class="inline-flex items-center space-x-2 bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-full w-fit">
+                <span class="flex h-2 w-2 relative">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+                </span>
+                <span class="text-xs font-mono-tech text-cyan-400">Disponible para nuevos proyectos</span>
+            </div>
+            
+            <h1 class="text-4xl sm:text-6xl font-bold tracking-tight text-white max-w-3xl">
+                Desarrollo software robusto. Aseguro <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">entornos digitales</span>.
+            </h1>
+            
+            <p class="text-lg text-slate-400 max-w-2xl leading-relaxed">
+                Ingeniero de Sistemas enfocado en la intersección del desarrollo web fullstack moderno y las operaciones de ciberseguridad defensiva y ofensiva.
+            </p>
+
+            <div class="flex flex-wrap gap-4 pt-4">
+                <a href="#proyectos" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold px-6 py-3 rounded-lg transition-all transform hover:-translate-y-0.5 shadow-lg shadow-cyan-500/10 text-sm">
+                    Ver Proyectos
+                </a>
+                <a href="#contacto" class="bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-200 font-medium px-6 py-3 rounded-lg transition-all text-sm">
+                    Contactar
+                </a>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="space-y-8 scroll-mt-20">
+            <div class="flex items-center space-x-4">
+                <h2 class="text-2xl font-bold text-white tracking-tight">Sobre Mí</h2>
+                <div class="h-[1px] bg-slate-800 flex-grow"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 items-start">
+                <div class="md:col-span-2 space-y-6 text-slate-400 leading-relaxed">
+                    <p>
+                        Actualmente curso el 10mo ciclo de Ingeniería de Sistemas en la Universidad Privada Antenor Orrego (UPAO). Mi formación académica y técnica se ha consolidado en dos pilares fundamentales: la arquitectura de aplicaciones fullstack eficientes y la mitigación de riesgos de seguridad.
+                    </p>
+                    <p>
+                        Cuento con la certificación <strong class="text-white font-medium">CAPT (Certified Junior Application Pentester)</strong> de Hackviser, lo que me permite aplicar un enfoque proactivo de seguridad en cada línea de código que escribo, garantizando el despliegue de sistemas protegidos contra las principales vulnerabilidades del entorno web actual.
+                    </p>
+                    <div class="border-l-2 border-cyan-500 pl-4 py-1 bg-slate-900/40 rounded-r-lg">
+                        <span class="text-sm italic text-slate-300">"Construir software funcional es solo la mitad del trabajo; la otra mitad es garantizar que sea escalable, rápido y seguro bajo cualquier escenario."</span>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900/50 border border-slate-800/80 p-6 rounded-xl space-y-4">
+                    <h3 class="font-semibold text-white text-sm font-mono-tech uppercase tracking-wider text-cyan-400">Trayectoria Rápida</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex justify-between border-b border-slate-800/50 pb-2">
+                            <span class="text-slate-400">Educación</span>
+                            <span class="text-slate-200 text-right">UPAO (10mo Ciclo)</span>
+                        </li>
+                        <li class="flex justify-between border-b border-slate-800/50 pb-2">
+                            <span class="text-slate-400">Especialidad Principal</span>
+                            <span class="text-slate-200 text-right">Desarrollo Fullstack</span>
+                        </li>
+                        <li class="flex justify-between border-b border-slate-800/50 pb-2">
+                            <span class="text-slate-400">Enfoque de Seguridad</span>
+                            <span class="text-slate-200 text-right">App Pentesting & SOC</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="text-slate-400">Base Operativa</span>
+                            <span class="text-slate-200 text-right">Trujillo, Perú</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="space-y-8 scroll-mt-20">
+            <div class="flex items-center space-x-4">
+                <h2 class="text-2xl font-bold text-white tracking-tight">Proyectos Destacados</h2>
+                <div class="h-[1px] bg-slate-800 flex-grow"></div>
+            </div>
+
+            <div class="grid md:grid-cols-1 gap-6">
+
+                <div class="glow-effect transition-all duration-300 bg-slate-900/40 border border-slate-800 p-6 md:p-8 rounded-2xl grid md:grid-cols-3 gap-6 relative z-10">
+                    <div class="md:col-span-2 space-y-4">
+                        <div class="space-y-1">
+                            <span class="text-xs font-mono-tech text-cyan-400 uppercase tracking-wider">Sistema de Gestión Empresarial</span>
+                            <h3 class="text-xl font-bold text-white">Centro CRM</h3>
+                        </div>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Diseño y desarrollo de un sistema integral estructurado para optimizar la administración interna de Grupo Docente Centro. Automatiza con éxito los flujos de ventas, la asignación y control de alumnos y la generación masiva de certificaciones académicas, reduciendo drásticamente la carga operativa manual.
+                        </p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-2.5 py-1 rounded bg-slate-950 text-xs font-mono-tech border border-slate-800 text-slate-300">HTML</span>
+                            <span class="px-2.5 py-1 rounded bg-slate-950 text-xs font-mono-tech border border-slate-800 text-slate-300">Jinja2</span>
+                            <span class="px-2.5 py-1 rounded bg-slate-950 text-xs font-mono-tech border border-slate-800 text-slate-300">Tailwind CSS</span>
+                            <span class="px-2.5 py-1 rounded bg-slate-950 text-xs font-mono-tech border border-slate-800 text-slate-300">Flask (Python)</span>
+                            <span class="px-2.5 py-1 rounded bg-slate-950 text-xs font-mono-tech border border-slate-800 text-slate-300">MySQL</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-between bg-slate-950/60 p-5 rounded-xl border border-slate-800/60 space-y-4">
+                        <div class="space-y-2">
+                            <h4 class="text-xs font-semibold text-slate-300 font-mono-tech uppercase tracking-wide">Aporte Fullstack</h4>
+                            <p class="text-xs text-slate-400">Responsable de estructurar la lógica relacional en MySQL, implementar el backend en Flask asegurando el saneamiento de datos y renderizar interfaces responsivas dinámicas mediante Jinja2.</p>
+                        </div>
+                        <div class="flex gap-3 pt-2">
+                            <button class="flex-1 text-center bg-slate-900/40 border border-slate-800/60 text-xs font-medium py-2 rounded text-slate-500 flex items-center justify-center gap-1 cursor-not-allowed" title="Código privado por confidencialidad" disabled>
+                                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                                Privado
+                            </button>
+                            <button onclick="openModal('crm-modal')" class="flex-1 text-center bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-500/20 text-xs font-semibold py-2 rounded transition-colors text-cyan-400 flex items-center justify-center gap-1">
+                                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                                Ver Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glow-effect transition-all duration-300 bg-slate-900/40 border border-slate-800 p-6 md:p-8 rounded-2xl grid md:grid-cols-3 gap-6 relative z-10">
+                    <div class="md:col-span-2 space-y-4">
+                        <div class="space-y-1">
+                            <span class="text-xs font-mono-tech text-emerald-400 uppercase tracking-wider">EdTech & Simulación</span>
+                            <h3 class="text-xl font-bold text-white">TuProfe</h3>
+                        </div>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Plataforma interactiva de alta fidelidad diseñada para la simulación y entrenamiento en exámenes del MINEDU. Funciona como un entorno de preparación clave enfocado en docentes que rinden evaluaciones de Nombramiento, Ascenso de Escala y acceso a Cargos Directivos, almacenando métricas de rendimiento avanzadas.
+                        </p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-2.5 py-1 rounded bg-slate-950 text-xs font-mono-tech border border-slate-800 text-slate-300">Astro</span>
+                            <span class="px-2.5 py-1 rounded bg-slate-950 text-xs font-mono-tech border border-slate-800 text-slate-300">Tailwind CSS</span>
+                            <span class="px-2.5 py-1 rounded bg-slate-950 text-xs font-mono-tech border border-slate-800 text-slate-300">Flask (Python)</span>
+                            <span class="px-2.5 py-1 rounded bg-slate-950 text-xs font-mono-tech border border-slate-800 text-slate-300">MySQL</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-between bg-slate-950/60 p-5 rounded-xl border border-slate-800/60 space-y-4">
+                        <div class="space-y-2">
+                            <h4 class="text-xs font-semibold text-slate-300 font-mono-tech uppercase tracking-wide">Aporte Fullstack</h4>
+                            <p class="text-xs text-slate-400">Implementación de un frontend estático ultrarrápido con Astro. Diseño del motor lógico backend en Flask encargado de procesar puntajes, control de tiempos y la persistencia de datos históricos en el servidor.</p>
+                        </div>
+                        <div class="flex gap-3 pt-2">
+                            <button onclick="openModal('tuprofe-modal')" class="flex-1 text-center bg-slate-900 hover:bg-slate-800 border border-slate-800 text-xs font-medium py-2 rounded transition-colors text-slate-200">
+                                Info Técnica
+                            </button>
+                            <button onclick="openModal('tuprofe-modal')" class="flex-1 text-center bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/20 text-xs font-semibold py-2 rounded transition-colors text-emerald-400 flex items-center justify-center gap-1">
+                                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                                Ver Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glow-effect transition-all duration-300 bg-slate-900/40 border border-slate-800 p-6 md:p-8 rounded-2xl grid md:grid-cols-3 gap-6 relative z-10">
+                    <div class="md:col-span-2 space-y-4">
+                        <div class="space-y-1">
+                            <span class="text-xs font-mono-tech text-cyan-400 uppercase tracking-wider">Aplicación Web de Reservas</span>
+                            <h3 class="text-xl font-bold text-white">SeparaYA</h3>
+                        </div>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Solución web moderna orientada a la reserva ágil y gestión de campos deportivos en tiempo real. Permite la interacción directa de usuarios para verificar disponibilidad por bloques horarios e integra un panel administrativo para controlar inventario de complejos deportivos de forma centralizada.
+                        </p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-2.5 py-1 rounded bg-slate-950 text-xs font-mono-tech border border-slate-800 text-slate-300">Astro</span>
+                            <span class="px-2.5 py-1 rounded bg-slate-950 text-xs font-mono-tech border border-slate-800 text-slate-300">Tailwind CSS</span>
+                            <span class="px-2.5 py-1 rounded bg-slate-950 text-xs font-mono-tech border border-slate-800 text-slate-300">Flask (Python)</span>
+                            <span class="px-2.5 py-1 rounded bg-slate-950 text-xs font-mono-tech border border-slate-800 text-slate-300">MySQL</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-between bg-slate-950/60 p-5 rounded-xl border border-slate-800/60 space-y-4">
+                        <div class="space-y-2">
+                            <h4 class="text-xs font-semibold text-slate-300 font-mono-tech uppercase tracking-wide">Aporte Fullstack</h4>
+                            <p class="text-xs text-slate-400">Control estricto de concurrencia en backend para mitigar la duplicidad de reservas. Maquetación optimizada enfocada a la experiencia móvil e integración fluida de APIs internas basadas en Flask restfull.</p>
+                        </div>
+                        <div class="flex gap-3 pt-2">
+                            <button onclick="openModal('separaya-modal')" class="flex-1 text-center bg-slate-900 hover:bg-slate-800 border border-slate-800 text-xs font-medium py-2 rounded transition-colors text-slate-200">
+                                Info Técnica
+                            </button>
+                            <button onclick="openModal('separaya-modal')" class="flex-1 text-center bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-500/20 text-xs font-semibold py-2 rounded transition-colors text-cyan-400 flex items-center justify-center gap-1">
+                                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                                Ver Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="habilidades" class="space-y-8 scroll-mt-20">
+            <div class="flex items-center space-x-4">
+                <h2 class="text-2xl font-bold text-white tracking-tight">Habilidades & Certificaciones</h2>
+                <div class="h-[1px] bg-slate-800 flex-grow"></div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="bg-slate-900/30 border border-slate-800/60 p-6 rounded-xl space-y-3">
+                    <h3 class="text-sm font-semibold text-white font-mono-tech text-cyan-400 uppercase tracking-wide">Desarrollo Core</h3>
+                    <ul class="text-sm text-slate-400 space-y-2">
+                        <li class="flex justify-between"><span>Python (Flask)</span> <span class="text-slate-600">Avanzado</span></li>
+                        <li class="flex justify-between"><span>Astro Framework</span> <span class="text-slate-600">Intermedio</span></li>
+                        <li class="flex justify-between"><span>Tailwind CSS / Jinja2</span> <span class="text-slate-600">Avanzado</span></li>
+                        <li class="flex justify-between"><span>MySQL / SQL Server</span> <span class="text-slate-600">Avanzado</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-900/30 border border-slate-800/60 p-6 rounded-xl space-y-3">
+                    <h3 class="text-sm font-semibold text-white font-mono-tech text-emerald-400 uppercase tracking-wide">Ciberseguridad</h3>
+                    <ul class="text-sm text-slate-400 space-y-2">
+                        <li>Security Operations Center (SOC)</li>
+                        <li>Application Penetesting</li>
+                        <li>Cloud Security (Google Cloud)</li>
+                        <li>Kali Linux, Metasploit, Nmap</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-900/30 border border-slate-800/60 p-6 rounded-xl space-y-3 sm:col-span-2 md:col-span-1">
+                    <h3 class="text-sm font-semibold text-white font-mono-tech text-slate-300 uppercase tracking-wide">Certificaciones</h3>
+                    <ul class="text-xs text-slate-400 space-y-2.5">
+                        <li class="flex flex-col">
+                            <span class="text-slate-200 font-medium">CAPT - Certified Junior Application Pentester</span>
+                            <span class="text-slate-500 text-[11px]">Hackviser</span>
+                        </li>
+                        <li class="flex flex-col">
+                            <span class="text-slate-200 font-medium">API Security Certified Associate</span>
+                            <span class="text-slate-500 text-[11px]">Wallarm</span>
+                        </li>
+                        <li class="flex flex-col">
+                            <span class="text-slate-200 font-medium">Security in Google Cloud Specialization</span>
+                            <span class="text-slate-500 text-[11px]">Coursera / Google Cloud</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="scroll-mt-20 pt-12 border-t border-slate-900 text-center space-y-6">
+            <h2 class="text-2xl font-bold text-white tracking-tight">¿Hablamos?</h2>
+            <p class="text-sm text-slate-400 max-w-md mx-auto leading-relaxed">
+                Si buscas un desarrollador enfocado en soluciones limpias y con un fuerte instinto de seguridad, hablemos de cómo aportar valor a tu equipo.
+            </p>
+            
+            <div class="flex justify-center items-center gap-6 text-sm font-mono-tech pt-4">
+                <a href="#" target="_blank" class="text-slate-400 hover:text-cyan-400 transition-colors">GitHub</a>
+                <a href="#" target="_blank" class="text-slate-400 hover:text-cyan-400 transition-colors">LinkedIn</a>
+                <a href="mailto:tu-correo@ejemplo.com" class="text-slate-400 hover:text-cyan-400 transition-colors">Email</a>
+            </div>
+
+            <p class="text-[11px] text-slate-600 font-mono-tech pt-12">
+                &copy; 2026 | Diseñado bajo buenas prácticas de ingeniería y seguridad web.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- MODAL: Centro CRM -->
+    <div id="crm-modal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl max-w-4xl w-full p-6 md:p-8 relative max-h-[90vh] overflow-y-auto modal-animate-in shadow-2xl shadow-cyan-500/5">
+            <!-- Close Button -->
+            <button onclick="closeModal('crm-modal')" class="absolute top-4 right-4 text-slate-400 hover:text-cyan-400 focus:outline-none transition-colors">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+                <!-- Info Column -->
+                <div class="space-y-6">
+                    <div>
+                        <span class="text-xs font-mono-tech text-cyan-400 uppercase tracking-wider">Centro CRM</span>
+                        <h3 class="text-2xl font-bold text-white mt-1">Gestión Interna Automatizada</h3>
+                    </div>
+
+                    <div class="space-y-4 text-sm text-slate-400 leading-relaxed">
+                        <div>
+                            <h4 class="font-semibold text-slate-200 uppercase text-xs font-mono-tech tracking-wider text-cyan-500/80">Descripción del Caso</h4>
+                            <p class="mt-1">
+                                CRM a medida diseñado para digitalizar y automatizar los procesos operativos de <strong>Grupo Docente Centro</strong>. Su principal objetivo es erradicar el trabajo manual en el control de matrículas y la entrega de certificaciones.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold text-slate-200 uppercase text-xs font-mono-tech tracking-wider text-cyan-500/80">Medidas de Ciberseguridad (Foco CAPT)</h4>
+                            <ul class="list-disc pl-5 mt-1 space-y-1.5">
+                                <li><strong>Previene SQLi:</strong> Uso estricto de consultas preparadas y el ORM de SQLAlchemy.</li>
+                                <li><strong>Protección de Sesión:</strong> Configuración de cookies con banderas <code class="text-cyan-300 font-mono-tech">Secure</code> y <code class="text-cyan-300 font-mono-tech">HttpOnly</code>.</li>
+                                <li><strong>Control de Accesos (RBAC):</strong> Roles diferenciados para restringir funciones financieras y de modificación a perfiles no autorizados.</li>
+                                <li><strong>Prevención CSRF:</strong> Implementación de tokens de validación cruzada en todas las peticiones POST/PUT.</li>
+                            </ul>
+                        </div>
+
+                        <div class="border border-cyan-500/20 bg-cyan-950/20 p-3 rounded-lg">
+                            <h4 class="font-semibold text-cyan-400 text-xs font-mono-tech flex items-center gap-1.5">
+                                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                                Nota de Privacidad
+                            </h4>
+                            <p class="text-xs text-slate-400 mt-1">
+                                Al ser un CRM que gestiona información privada y facturación interna de la empresa, el código fuente y las bases de datos están restringidos bajo NDA. La interfaz que ves al lado es una recreación funcional para fines demostrativos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Preview Column -->
+                <div class="bg-slate-950 rounded-xl border border-slate-800 p-4 space-y-4">
+                    <span class="text-[10px] font-mono-tech text-slate-500 uppercase tracking-widest block text-center border-b border-slate-900 pb-2">Simulación del Dashboard de Ventas</span>
+                    
+                    <!-- SaaS Mockup UI -->
+                    <div class="rounded-lg bg-slate-900 border border-slate-800/80 overflow-hidden text-xs">
+                        <!-- Mockup Topbar -->
+                        <div class="bg-slate-950 px-3 py-2 flex items-center justify-between border-b border-slate-800/50">
+                            <span class="font-mono-tech text-cyan-400 font-bold text-[10px]">&lt;DOCENTE.CENTRO /&gt;</span>
+                            <div class="flex items-center space-x-2">
+                                <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+                                <span class="text-[10px] text-slate-400 font-mono-tech">Admin-01</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Mockup Layout Grid -->
+                        <div class="grid grid-cols-4 min-h-[220px]">
+                            <!-- Sidebar -->
+                            <div class="bg-slate-950/80 border-r border-slate-800/50 p-2 space-y-1.5 col-span-1 text-[10px] font-medium text-slate-400">
+                                <div class="bg-slate-900 text-cyan-400 px-2 py-1 rounded">Dashboard</div>
+                                <div class="px-2 py-1 hover:text-white">Alumnos</div>
+                                <div class="px-2 py-1 hover:text-white">Ventas</div>
+                                <div class="px-2 py-1 hover:text-white flex items-center justify-between">
+                                    Certificados
+                                    <span class="bg-cyan-500/10 text-cyan-400 text-[8px] px-1 rounded">Auto</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Main Content Panel -->
+                            <div class="col-span-3 p-3 space-y-3 bg-slate-900/50">
+                                <!-- Cards Row -->
+                                <div class="grid grid-cols-2 gap-2">
+                                    <div class="bg-slate-900 border border-slate-800 p-2 rounded">
+                                        <span class="text-[9px] text-slate-500 uppercase">Matrículas Hoy</span>
+                                        <div class="text-sm font-bold text-white mt-0.5">24 Alumnos</div>
+                                    </div>
+                                    <div class="bg-slate-900 border border-slate-800 p-2 rounded">
+                                        <span class="text-[9px] text-slate-500 uppercase">Certificados</span>
+                                        <div class="text-sm font-bold text-emerald-400 mt-0.5">85 Emitidos</div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Table -->
+                                <div class="border border-slate-800 rounded bg-slate-900 overflow-hidden">
+                                    <div class="bg-slate-950 px-2 py-1 text-[9px] text-slate-500 border-b border-slate-800 flex justify-between">
+                                        <span>Últimas Certificaciones</span>
+                                        <span class="text-cyan-400">Ver todo</span>
+                                    </div>
+                                    <div class="p-1.5 space-y-1 text-[9px]">
+                                        <div class="flex justify-between items-center text-slate-300 border-b border-slate-800/40 pb-1">
+                                            <span>Carlos Rodriguez</span>
+                                            <span class="px-1 bg-emerald-500/10 text-emerald-400 rounded text-[8px]">Enviado</span>
+                                        </div>
+                                        <div class="flex justify-between items-center text-slate-300">
+                                            <span>Ana Maria Ortiz</span>
+                                            <span class="px-1 bg-amber-500/10 text-amber-400 rounded text-[8px]">Pendiente</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Action button simulation -->
+                                <button class="w-full text-center bg-cyan-500 text-slate-950 font-semibold py-1.5 rounded text-[10px] shadow-sm hover:bg-cyan-400 transition-colors">
+                                    + Generar Lote Certificados
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: TuProfe -->
+    <div id="tuprofe-modal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl max-w-4xl w-full p-6 md:p-8 relative max-h-[90vh] overflow-y-auto modal-animate-in shadow-2xl shadow-emerald-500/5">
+            <!-- Close Button -->
+            <button onclick="closeModal('tuprofe-modal')" class="absolute top-4 right-4 text-slate-400 hover:text-emerald-400 focus:outline-none transition-colors">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+                <!-- Info Column -->
+                <div class="space-y-6">
+                    <div>
+                        <span class="text-xs font-mono-tech text-emerald-400 uppercase tracking-wider">TuProfe EdTech</span>
+                        <h3 class="text-2xl font-bold text-white mt-1">Simulador de Exámenes de Nombramiento</h3>
+                    </div>
+
+                    <div class="space-y-4 text-sm text-slate-400 leading-relaxed">
+                        <div>
+                            <h4 class="font-semibold text-slate-200 uppercase text-xs font-mono-tech tracking-wider text-emerald-500/80">Descripción del Proyecto</h4>
+                            <p class="mt-1">
+                                Sistema de preparación y entrenamiento interactivo para docentes a nivel nacional en las evaluaciones oficiales del MINEDU. Admite un banco de preguntas dinámico y genera puntajes en tiempo real con estadísticas.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold text-slate-200 uppercase text-xs font-mono-tech tracking-wider text-emerald-500/80">Aspectos Técnicos & Rendimiento</h4>
+                            <ul class="list-disc pl-5 mt-1 space-y-1.5">
+                                <li><strong>Frontend Astro (SSG/Hydration):</strong> Generación estática que garantiza que el portal cargue en menos de 0.8s, usando componentes hidratados solo para la ejecución del examen.</li>
+                                <li><strong>Base de Datos Relacional:</strong> Diseñado en MySQL con relaciones complejas para mantener subcategorías de temario y rúbricas de respuesta.</li>
+                                <li><strong>Motor de Control de Tiempos:</strong> Lógica en el backend de Flask para sincronizar el tiempo del usuario, evitando reinicios de examen en caso de desconexiones temporales.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Preview Column -->
+                <div class="bg-slate-950 rounded-xl border border-slate-800 p-4 space-y-4">
+                    <span class="text-[10px] font-mono-tech text-slate-500 uppercase tracking-widest block text-center border-b border-slate-900 pb-2">Simulación del Entorno de Examen</span>
+                    
+                    <!-- Exam Interface Mockup -->
+                    <div class="rounded-lg bg-slate-900 border border-slate-800/80 overflow-hidden text-xs">
+                        <!-- Header Mockup -->
+                        <div class="bg-slate-950 px-3 py-2 flex items-center justify-between border-b border-slate-800/50 text-[10px]">
+                            <span class="font-mono-tech text-slate-400">Pregunta 14 de 90</span>
+                            <div class="flex items-center space-x-1.5 text-emerald-400 font-mono-tech">
+                                <span class="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                                <span>Tiempo: 02:44:12</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Exam Question Panel -->
+                        <div class="p-4 space-y-4">
+                            <p class="font-medium text-white leading-relaxed">
+                                ¿Cuál de las siguientes acciones del docente promueve directamente la autonomía en el aprendizaje de los estudiantes?
+                            </p>
+                            
+                            <div class="space-y-2 text-[11px]">
+                                <div class="bg-slate-950/80 border border-slate-850 p-2.5 rounded cursor-pointer hover:border-emerald-500/50 hover:bg-slate-950 transition-all flex items-start gap-2">
+                                    <input type="radio" name="option-tp" class="mt-0.5 accent-emerald-500" id="opt-a">
+                                    <label for="opt-a" class="text-slate-400 cursor-pointer">A) Entregarles una lista de pasos detallados que deben seguir estrictamente para resolver un problema.</label>
+                                </div>
+                                <div class="bg-slate-950 border border-emerald-500/40 p-2.5 rounded cursor-pointer flex items-start gap-2">
+                                    <input type="radio" name="option-tp" class="mt-0.5 accent-emerald-500" id="opt-b" checked>
+                                    <label for="opt-b" class="text-emerald-300 font-medium cursor-pointer">B) Brindarles preguntas de reflexión para que ellos mismos autoevalúen su proceso e identifiquen errores.</label>
+                                </div>
+                                <div class="bg-slate-950/80 border border-slate-850 p-2.5 rounded cursor-pointer hover:border-emerald-500/50 hover:bg-slate-950 transition-all flex items-start gap-2">
+                                    <input type="radio" name="option-tp" class="mt-0.5 accent-emerald-500" id="opt-c">
+                                    <label for="opt-c" class="text-slate-400 cursor-pointer">C) Calificar de inmediato cada respuesta errónea para que el estudiante memorice la solución correcta.</label>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <div class="flex justify-between pt-2">
+                                <button class="bg-slate-800 text-slate-300 hover:text-white px-3 py-1.5 rounded transition-all text-[10px]">
+                                    Anterior
+                                </button>
+                                <button class="bg-emerald-500 text-slate-950 font-bold px-4 py-1.5 rounded hover:bg-emerald-400 transition-all text-[10px]">
+                                    Siguiente Pregunta
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: SeparaYA -->
+    <div id="separaya-modal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl max-w-4xl w-full p-6 md:p-8 relative max-h-[90vh] overflow-y-auto modal-animate-in shadow-2xl shadow-cyan-500/5">
+            <!-- Close Button -->
+            <button onclick="closeModal('separaya-modal')" class="absolute top-4 right-4 text-slate-400 hover:text-cyan-400 focus:outline-none transition-colors">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+                <!-- Info Column -->
+                <div class="space-y-6">
+                    <div>
+                        <span class="text-xs font-mono-tech text-cyan-400 uppercase tracking-wider">SeparaYA</span>
+                        <h3 class="text-2xl font-bold text-white mt-1">Gestión de Campos Deportivos</h3>
+                    </div>
+
+                    <div class="space-y-4 text-sm text-slate-400 leading-relaxed">
+                        <div>
+                            <h4 class="font-semibold text-slate-200 uppercase text-xs font-mono-tech tracking-wider text-cyan-500/80">Descripción del Proyecto</h4>
+                            <p class="mt-1">
+                                Plataforma de consumo público que permite la verificación de disponibilidad por bloques de horarios y la reserva digital instantánea de lozas y campos deportivos.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold text-slate-200 uppercase text-xs font-mono-tech tracking-wider text-cyan-500/80">Solución a Retos Complejos</h4>
+                            <ul class="list-disc pl-5 mt-1 space-y-1.5">
+                                <li><strong>Evita Reservas Duplicadas:</strong> Implementación de cierres de transacciones (concurrencia) en base de datos. Cuando dos personas pulsan "Reservar" al mismo milisegundo, el servidor encola la petición y confirma únicamente al primer pago verificado.</li>
+                                <li><strong>Diseño Mobile First:</strong> Estructura maquetada de manera altamente responsiva para permitir reservas rápidas desde dispositivos móviles a minutos de iniciar un encuentro deportivo.</li>
+                                <li><strong>API Restful:</strong> Diseño de endpoints modulares en Flask que procesan horarios, estados de canchas, y perfiles de complejos deportivos.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Preview Column -->
+                <div class="bg-slate-950 rounded-xl border border-slate-800 p-4 space-y-4">
+                    <span class="text-[10px] font-mono-tech text-slate-500 uppercase tracking-widest block text-center border-b border-slate-900 pb-2">Simulación del Flujo de Reserva</span>
+                    
+                    <!-- Booking Calendar Mockup -->
+                    <div class="rounded-lg bg-slate-900 border border-slate-800/80 overflow-hidden text-xs">
+                        <!-- Date Selection -->
+                        <div class="bg-slate-950 px-3 py-2 flex items-center justify-between border-b border-slate-800/50 text-[10px]">
+                            <span class="text-slate-300 font-bold">Complejo Deportivo El Golazo</span>
+                            <span class="text-cyan-400 font-mono-tech">Viernes, 03 Julio</span>
+                        </div>
+                        
+                        <!-- Grid list of schedules -->
+                        <div class="p-3 space-y-3">
+                            <span class="text-[9px] text-slate-500 uppercase">Cancha Sintética 1 (Fútbol 7)</span>
+                            <div class="grid grid-cols-3 gap-2">
+                                <div class="bg-red-500/10 border border-red-500/20 p-2 rounded text-center text-red-400 line-through">
+                                    <span class="block font-bold">17:00</span>
+                                    <span class="text-[8px]">Ocupado</span>
+                                </div>
+                                <div class="bg-red-500/10 border border-red-500/20 p-2 rounded text-center text-red-400 line-through">
+                                    <span class="block font-bold">18:00</span>
+                                    <span class="text-[8px]">Ocupado</span>
+                                </div>
+                                <div class="bg-cyan-500/10 border border-cyan-500/30 p-2 rounded text-center text-cyan-400 hover:bg-cyan-500/20 cursor-pointer transition-colors">
+                                    <span class="block font-bold">19:00</span>
+                                    <span class="text-[8px]">Disponible</span>
+                                </div>
+                                <div class="bg-cyan-500/10 border border-cyan-500/30 p-2 rounded text-center text-cyan-400 hover:bg-cyan-500/20 cursor-pointer transition-colors">
+                                    <span class="block font-bold">20:00</span>
+                                    <span class="text-[8px]">Disponible</span>
+                                </div>
+                                <div class="bg-red-500/10 border border-red-500/20 p-2 rounded text-center text-red-400 line-through">
+                                    <span class="block font-bold">21:00</span>
+                                    <span class="text-[8px]">Ocupado</span>
+                                </div>
+                                <div class="bg-cyan-500/10 border border-cyan-500/30 p-2 rounded text-center text-cyan-400 hover:bg-cyan-500/20 cursor-pointer transition-colors">
+                                    <span class="block font-bold">22:00</span>
+                                    <span class="text-[8px]">Disponible</span>
+                                </div>
+                            </div>
+
+                            <!-- Database Lock Indicator (wow factor) -->
+                            <div class="flex items-center space-x-2 bg-slate-950 p-2 rounded border border-slate-800 text-[9px] text-slate-400">
+                                <span class="flex h-1.5 w-1.5 relative">
+                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                                    <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-cyan-500"></span>
+                                </span>
+                                <span>Verificando bloqueos de concurrencia... OK</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Mouse spotlight effect
+        document.addEventListener('mousemove', (e) => {
+            const x = e.clientX;
+            const y = e.clientY;
+            document.documentElement.style.setProperty('--mouse-x', `${x}px`);
+            document.documentElement.style.setProperty('--mouse-y', `${y}px`);
+        });
+
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const isOpen = !mobileMenu.classList.contains('hidden');
+            if (isOpen) {
+                // Change to close cross icon
+                menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+            } else {
+                // Change back to hamburger menu icon
+                menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            }
+        });
+
+        // Close mobile menu on nav link clicks
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            });
+        });
+
+        // Modals management
+        function openModal(id) {
+            const modal = document.getElementById(id);
+            if (modal) {
+                modal.classList.remove('hidden');
+                document.body.classList.add('modal-active');
+            }
+        }
+
+        function closeModal(id) {
+            const modal = document.getElementById(id);
+            if (modal) {
+                modal.classList.add('hidden');
+                document.body.classList.remove('modal-active');
+            }
+        }
+
+        // Close modal when clicking outside of it
+        window.addEventListener('click', (e) => {
+            const activeModal = document.querySelector('.fixed.z-50:not(.hidden)');
+            if (activeModal && e.target === activeModal) {
+                closeModal(activeModal.id);
+            }
+        });
+
+        // Close modal on Escape key press
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const activeModal = document.querySelector('.fixed.z-50:not(.hidden)');
+                if (activeModal) {
+                    closeModal(activeModal.id);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
