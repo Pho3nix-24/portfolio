@@ -1101,6 +1101,13 @@
             history.scrollRestoration = 'manual';
         }
         window.scrollTo(0, 0);
+
+        // Additional safeguard for first-load hash navigation or deep session restores
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                window.scrollTo(0, 0);
+            }, 30);
+        });
         
         // Ambient background light follow coordinates
         document.addEventListener('mousemove', (e) => {
