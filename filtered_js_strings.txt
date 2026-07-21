@@ -1,0 +1,179 @@
+]'))f(N);new MutationObserver(N=>{for(const U of N)if(U.type===
+)for(const F of U.addedNodes)F.tagName===
+)&&(d=null);var k=!1;if(d===null)k=!0;else switch(I){case
+?x.fetchPriority:void 0;w===
+?x.precedence:void 0,{crossOrigin:K,integrity:Y,fetchPriority:ie}):w===
+;case Ee:return(e.displayName||
+:var l=t.toLowerCase().slice(0,5);if(l!==
+:Pu(e,a.value,a.defaultValue);break e;case
+in e?-e.wheelDeltaY:
+){if(t===0){Ce=Bt(e.nextSibling);break e}t--}else a!==
+));if(c){for(var u=0;u<c.length;u++)if(i=c[u],i.getAttribute(
+&&(u.preventDefault(),o=c?Ws(n,c):new FormData(n),Cc(a,{pending:!0,data:o,method:n.method,action:i},i,o))},currentTarget:n}]})}}for(var ou=0;ou<J1.length;ou++){var fu=J1[ou],Rf=fu.toLowerCase(),_f=fu[0].toUpperCase()+fu.slice(1);Lt(Rf,
+change click focusin focusout input keydown keyup selectionchange
+compositionend focusout keydown keypress keyup mousedown
+compositionstart focusout keydown keypress keyup mousedown
+compositionupdate focusout keydown keypress keyup mousedown
+&&(Hf.has(a)||du(a,!1,e),du(a,!0,e))});var t=e.nodeType===9?e:e.ownerDocument;t===null||t[t1]||(t[t1]=!0,du(
+,J,a,z),Q.target=v,Q.relatedTarget=pe,j=Q),pe=j,p&&J)t:{for(Q=p,m=J,h=0,v=Q;v;v=Vl(v))h++;for(v=0,j=m;j;j=Vl(j))v++;for(;0<h-v;)Q=Vl(Q),h--;for(;0<v-h;)m=Vl(m),v--;for(;h--;){if(Q===m||m!==null&&Q===m.alternate)break t;Q=Vl(Q),m=Vl(m)}Q=null}else Q=null;p!==null&&$s(O,g,p,Q,!1),J!==null&&pe!==null&&$s(O,pe,J,Q,!0)}}e:{if(g=y?tn(y):window,p=g.nodeName&&g.nodeName.toLowerCase(),p===
+)var _=g0;else if(v0(g))if(p0)_=Io;else{_=Wo;var ee=Jo}else p=g.nodeName,!p||p.toLowerCase()!==
+&&i!==null&&(a in e?e[a]=null:e.hasAttribute(a)&&e.removeAttribute(a)),e.addEventListener(t,l,n);break e}a in e?e[a]=l:l===!0?e.setAttribute(a,
+,e);var l=!1,n=!1,i;for(i in a)if(a.hasOwnProperty(i)){var c=a[i];if(c!=null)switch(i){case
+,e);var u=i=c=n=null,o=null,y=null;for(l in a)if(a.hasOwnProperty(l)){var z=a[l];if(z!=null)switch(l){case
+,e),l=c=i=null;for(n in a)if(a.hasOwnProperty(n)&&(u=a[n],u!=null))switch(n){case
+,e),i=n=l=null;for(c in a)if(a.hasOwnProperty(c)&&(u=a[c],u!=null))switch(c){case
+:for(o in a)if(a.hasOwnProperty(o)&&(l=a[o],l!=null))switch(o){case
+:for(y in a)if(a.hasOwnProperty(y)&&(l=a[y],l!=null))switch(y){case
+:var n=null,i=null,c=null,u=null,o=null,y=null,z=null;for(p in a){var O=a[p];if(a.hasOwnProperty(p)&&O!=null)switch(p){case
+:o=O;default:l.hasOwnProperty(p)||ge(e,t,p,null,l,O)}}for(var g in l){var p=l[g];if(O=a[g],l.hasOwnProperty(g)&&(p!=null||O!=null))switch(g){case
+:p=c=u=g=null;for(i in a)if(o=a[i],a.hasOwnProperty(i)&&o!=null)switch(i){case
+:p=o;default:l.hasOwnProperty(i)||ge(e,t,i,null,l,o)}for(n in l)if(i=l[n],o=a[n],l.hasOwnProperty(n)&&(i!=null||o!=null))switch(n){case
+:p=g=null;for(u in a)if(n=a[u],a.hasOwnProperty(u)&&n!=null&&!l.hasOwnProperty(u))switch(u){case
+:break;default:ge(e,t,u,null,l,n)}for(c in l)if(n=l[c],i=a[c],l.hasOwnProperty(c)&&(n!=null||i!=null))switch(c){case
+:for(var J in a)if(g=a[J],a.hasOwnProperty(J)&&g!=null&&!l.hasOwnProperty(J))switch(J){case
+:e.selected=!1;break;default:ge(e,t,J,null,l,g)}for(o in l)if(g=l[o],p=a[o],l.hasOwnProperty(o)&&g!==p&&(g!=null||p!=null))switch(o){case
+:for(var Q in a)g=a[Q],a.hasOwnProperty(Q)&&g!=null&&!l.hasOwnProperty(Q)&&ge(e,t,Q,null,l,g);for(y in l)if(g=l[y],p=a[y],l.hasOwnProperty(y)&&g!==p&&(g!=null||p!=null))switch(y){case
+||a.removeChild(c),c=u}}if(n===0){e.removeChild(i),Jn(t);return}n--}else a===
+&&a&&a.imageSrcSet?void 0:e,as:t},a),Ct.set(i,e),l.querySelector(n)!==null||t===
+:var l=e.querySelector('style[data-href~=
+)c||jr(a);else if(c){var u=null;if(i&&i.hasAttribute(
+).trim(),B3=s=>{for(const b in s)if(b.startsWith(
+One-time secrets
+Charlas y proyectos
+Cybersecurity Engineer + Backend Engineer
+Go, Cloud Security, Linux, Networking, OAuth/OIDC, MCP, AWS IAM
+CompTIA Security+, AWS CCP, Linux FCA, HCIA Datacom
+Arquitectura de software, backend, seguridad cloud y compliance técnico.
+Combino arquitectura de software, desarrollo backend, seguridad cloud, Linux, redes y compliance para construir y operar sistemas seguros desde el diseño. Trabajo especialmente sobre identidad, permisos, datos sensibles, auditoría, observabilidad, infraestructura y confiabilidad operativa.
+En Teramot desarrollo el backend en Go de Aleph, trabajo sobre arquitectura y seguridad en AWS, y convierto requisitos SOC 2 e ISO/IEC 27001 en implementaciones técnicas verificables.
+Seguridad cloud y compliance
+Lidero la estrategia técnica de ciberseguridad y compliance en Teramot, integrando controles SOC 2 e ISO/IEC 27001 en infraestructura y producto.
+Arquitectura backend en Go
+Soy arquitecto principal de Aleph, una plataforma backend que expone datos empresariales de forma segura a agentes de IA: archivos, bases de datos y APIs.
+Operaciones de seguridad y hardening cloud
+AWS ECS/Fargate, IAM, SSO, CloudTrail, GuardDuty, OIDC en GitHub Actions, secretos, remediación e instrumentación con OpenTelemetry.
+Trayectoria profesional
+Cybersecurity Engineer & Software Engineer
+nov. 2025 — actualidad
+Liderazgo técnico de ciberseguridad y compliance en una startup de IA. Arquitectura principal de Aleph, un backend en Go para el acceso seguro y escalable a datos empresariales consumidos por agentes de IA.
+Cybersecurity & Compliance Analyst
+Estructuración del área de seguridad, automatización de controles, evidencia de auditoría y hardening de infraestructura AWS para datos sensibles usados por agentes de IA.
+Data Protection
+Analista de Ciberseguridad
+Estrategia de seguridad para clientes de outsourcing, arquitectura de red segura, hardening, automatización y operación SOC con Sophos Central, Avast Business y Nagios.
+Universidad Abierta Interamericana
+Acompañamiento académico en arquitectura de procesadores, jerarquía de memoria, I/O y conceptos de sistemas de bajo nivel.
+Low-level systems
+CPU Architecture
+Academia y certificaciones
+Ingeniería en Sistemas Informáticos
+Analista de Sistemas Informáticos
+CompTIA Security+
+SY0-701 · vigente hasta feb. 2029
+Operaciones, riesgo, arquitectura de seguridad y fundamentos de respuesta a incidentes.
+AWS Certified Cloud Practitioner
+CLF-C02 · vigente hasta jul. 2028
+Conceptos cloud, seguridad, servicios, facturación y responsabilidad compartida en AWS.
+Linux Foundation Certified IT Associate
+LFCA · vigente hasta abr. 2028
+Linux, cloud, DevOps, fundamentos de seguridad y sistemas de TI modernos.
+Huawei HCIA Datacom
+Huawei Certified ICT Associate · Datacom
+Routing, switching, redes IP y fundamentos de conectividad empresarial.
+Stack operativo
+Tecnologías y prácticas presentes en producto, seguridad cloud, auditorías y operación en producción.
+Seguridad cloud
+Seguridad e infraestructura AWS para workloads de producto, datos sensibles y despliegues auditables.
+Compliance engineering
+Controles implementados en sistemas, evidencia, poblaciones de auditoría y remediación técnica.
+Arquitectura backend
+Servicios en Go para APIs, eventos, autenticación, observabilidad y contratos compartidos con frontend.
+Sistemas y redes
+Administración Linux, redes, VPNs, firewalls, monitoreo y troubleshooting operativo.
+Charlas, reconocimiento y proyectos abiertos
+Speaking y reconocimiento
+Repositorios destacados
+Proyecto destacado
+Charlas y reconocimientos anteriores
+Ver agenda oficial
+Abrir Open Security Labs
+Abrir repositorio
+Abstraction Leaks: Why Understanding Linux Internals Still Matters
+Vincular Inteligente 2026
+Seguridad con IA
+Monitoreo inteligente, respuesta temprana y automatización aplicada a defensa.
+CyberSecTuc Meetup #3
+La realidad de un Ingeniero en Ciberseguridad
+Charla sobre carrera, criterio técnico y trabajo práctico en seguridad.
+Expositor Distinguido en Seguridad Informática
+Reverse shells aplicadas a pruebas de penetración y análisis ofensivo.
+Mejor Exposición
+Investigación sobre botnets, comportamiento distribuido y taxonomía de amenazas.
+Rosario, Argentina · conversaciones técnicas sobre seguridad cloud, backend, compliance, agentes de IA, Linux y arquitectura de sistemas.
+Perfiles sociales
+Disponible para conversaciones técnicas
+Seguridad · sistemas · open source
+Valentin Torassa Colombero · Cybersecurity & Backend
+Cybersecurity and backend engineer focused on cloud security, Go architecture, Linux, technical compliance, and systems for AI agents.
+Software architecture, backend, cloud security, and technical compliance.
+I combine software architecture, backend development, cloud security, Linux, networking, and compliance to build and operate secure-by-design systems. My work focuses on identity, permissions, sensitive data, auditability, observability, infrastructure, and operational reliability.
+At Teramot, I develop Aleph’s Go backend, work across AWS architecture and security, and translate SOC 2 and ISO/IEC 27001 requirements into verifiable technical implementations.
+Cloud security and compliance
+I lead Teramot’s technical cybersecurity and compliance strategy, embedding SOC 2 and ISO/IEC 27001 controls into infrastructure and product.
+Backend architecture in Go
+I am the principal architect of Aleph, a backend platform that securely exposes enterprise data to AI agents across files, databases, and APIs.
+Security operations and cloud hardening
+AWS ECS/Fargate, IAM, SSO, CloudTrail, GuardDuty, GitHub Actions OIDC, secrets, remediation, and OpenTelemetry instrumentation.
+Professional experience
+Technical cybersecurity and compliance leadership at an AI startup. Principal architecture of Aleph, a Go backend that gives AI agents secure, scalable access to enterprise data.
+Cybersecurity Analyst
+Security strategy for outsourcing clients, secure network architecture, hardening, automation, and SOC operations with Sophos Central, Avast Business, and Nagios.
+Academic support across processor architecture, memory hierarchies, I/O, and low-level systems concepts.
+Education and certifications
+Academic background
+Information Systems Engineering
+Information Systems Analyst
+SY0-701 · valid through Feb. 2029
+Security operations, risk, architecture, and incident response fundamentals.
+CLF-C02 · valid through Jul. 2028
+AWS cloud concepts, security, services, billing, and shared responsibility.
+LFCA · valid through Apr. 2028
+Linux, cloud, DevOps, security fundamentals, and modern IT systems.
+Routing, switching, IP networking, and enterprise connectivity fundamentals.
+Operational stack
+Technologies and practices used across product engineering, cloud security, audits, and production operations.
+AWS security and infrastructure for product workloads, sensitive data, and auditable deployments.
+System-level controls, evidence, audit populations, and technical remediation.
+Backend architecture
+Go services for APIs, events, authentication, observability, and shared frontend contracts.
+Systems and networks
+Linux administration, networking, VPNs, firewalls, monitoring, and operational troubleshooting.
+Talks, recognition, and open projects
+Speaking and recognition
+Featured repositories
+Featured project
+Previous talks and recognition
+View official schedule
+Open Open Security Labs
+Open repository
+Friday, July 24, 2026 · 10:00. A talk on why understanding kernels, processes, memory, and networking still matters behind modern abstractions.
+Security with AI
+Intelligent monitoring, early response, and automation applied to defensive security.
+The reality of working as a Cybersecurity Engineer
+A practical talk about career development, technical judgment, and security work.
+Distinguished Speaker in Information Security
+Reverse shells applied to penetration testing and offensive analysis.
+Best Presentation
+Research on botnets, distributed behavior, and threat taxonomy.
+Rosario, Argentina · technical conversations about cloud security, backend systems, compliance, AI agents, Linux, and systems architecture.
+Social profiles
+Watch on YouTube
+Open to technical conversations
+Security · systems · open source
+]',C.seo.description)},[C.documentTitle,C.seo.description,C.seo.locale,s]),se.useEffect(()=>()=>{be.current!==void 0&&globalThis.clearTimeout(be.current)},[]),se.useEffect(()=>{if(!w)return;const A=ze=>{ze.key===
+)];let R=-1;L.forEach((I,k)=>{I.getBoundingClientRect().top<=T&&(R=k)}),ne.style.setProperty(
+noopener noreferrer
+,new Date().getFullYear(),
+||!N.current)return;const w=[...N.current.querySelectorAll('button, a[href], [tabindex]:not([tabindex=
+,f=s.deviceMemory!==void 0&&s.deviceMemory<=4||navigator.hardwareConcurrency<=4||b?.effectiveType===
+re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().

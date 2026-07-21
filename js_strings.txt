@@ -1,0 +1,688 @@
+))return;for(const N of document.querySelectorAll('link[rel=
+]'))f(N);new MutationObserver(N=>{for(const U of N)if(U.type===
+)for(const F of U.addedNodes)F.tagName===
+?U.credentials=
+:N.crossOrigin===
+:U.credentials=
+in N){U={};for(var V in N)V!==
+)&&(d=null);var k=!1;if(d===null)k=!0;else switch(I){case
+,{bubbles:!0,cancelable:!0,message:typeof d==
+&&typeof process.emit==
+&&typeof performance.now==
+?setTimeout:null,C=typeof clearTimeout==
+?clearTimeout:null,Ee=typeof setImmediate<
+){K.callback=null,Y=K.priorityLevel;var d=ne(K.expirationTime<=M);if(M=s.unstable_now(),typeof d==
+&&(x?(x=x.crossOrigin,x=typeof x==
+use-credentials
+){var w=x.as,K=V(w,x.crossOrigin),Y=typeof x.integrity==
+?x.integrity:void 0,ie=typeof x.fetchPriority==
+?x.fetchPriority:void 0;w===
+?f.d.S(E,typeof x.precedence==
+?x.precedence:void 0,{crossOrigin:K,integrity:Y,fetchPriority:ie}):w===
+&&f.d.X(E,{crossOrigin:K,integrity:Y,fetchPriority:ie,nonce:typeof x.nonce==
+){var w=V(x.as,x.crossOrigin);f.d.M(E,{crossOrigin:w,integrity:typeof x.integrity==
+){var w=x.as,K=V(w,x.crossOrigin);f.d.L(E,w,{crossOrigin:K,integrity:typeof x.integrity==
+?x.type:void 0,fetchPriority:typeof x.fetchPriority==
+?x.fetchPriority:void 0,referrerPolicy:typeof x.referrerPolicy==
+?x.referrerPolicy:void 0,imageSrcSet:typeof x.imageSrcSet==
+?x.imageSrcSet:void 0,imageSizes:typeof x.imageSizes==
+?x.imageSizes:void 0,media:typeof x.media==
+)if(x){var w=V(x.as,x.crossOrigin);f.d.m(E,{as:typeof x.as==
+?x.as:void 0,crossOrigin:w,integrity:typeof x.integrity==
+)return e.$$typeof===ze?null:e.displayName||e.name||null;if(typeof e==
+;case Ee:return(e.displayName||
+ForwardRef(
+ForwardRef
+&&Pn(e),Ie&&typeof Ie.setStrictMode==
+:e.removeAttribute(t);return;case
+:var l=t.toLowerCase().slice(0,5);if(l!==
+){e.removeAttribute(t);return}}e.setAttribute(t,
+:e.removeAttribute(t);return}e.setAttribute(t,
+:e.removeAttribute(a);return}e.setAttributeNS(t,a,
+);return e.displayName&&z.includes(
++e[t];if(!e.hasOwnProperty(t)&&typeof a<
++t.charCodeAt(0).toString(16)+
+?e.type=c:e.removeAttribute(
+||e.removeAttribute(
+),t!=null?N1(e,c,St(t)):a!=null?N1(e,c,St(a)):l!=null&&e.removeAttribute(
+),n==null&&i!=null&&(e.defaultChecked=!!i),n!=null&&(e.checked=n&&typeof n!=
++St(u):e.removeAttribute(
++St(t):a,u||t===e.value||(e.value=t),e.defaultValue=t}l=l??n,l=typeof l!=
+&&!!l,e.checked=u?e.checked:!!l,e.defaultChecked=!!l,c!=null&&typeof c!=
+&&oi(e.ownerDocument)===e||e.defaultValue===
++a||(e.defaultValue=
++a[n]]=!0;for(a=0;a<e.length;a++)n=t.hasOwnProperty(
++e[a].value),e[a].selected!==n&&(e[a].selected=n),n&&l&&(e[a].defaultSelected=!0)}else{for(a=
++St(t),t!==e.value&&(e.value=t),a==null)){e.defaultValue!==t&&(e.defaultValue=t);return}e.defaultValue=a!=null?
+),t=a}a=St(t),e.defaultValue=a,l=e.textContent,l===a&&l!==
+?l?e.setProperty(t,
+:l?e.setProperty(t,a):typeof a!=
+)===0?e.setProperty(l,
+acceptCharset
+crossOrigin
+crossorigin
+accentHeight
+alignmentBaseline
+arabicForm
+baselineShift
+colorInterpolation
+color-interpolation
+colorInterpolationFilters
+color-interpolation-filters
+colorProfile
+dominantBaseline
+enableBackground
+enable-background
+fillOpacity
+floodColor
+floodOpacity
+fontFamily
+fontSizeAdjust
+fontStretch
+fontVariant
+fontWeight
+glyphOrientationHorizontal
+glyph-orientation-horizontal
+glyphOrientationVertical
+glyph-orientation-vertical
+horizOriginX
+letterSpacing
+lightingColor
+markerStart
+overlinePosition
+overlineThickness
+paintOrder
+pointerEvents
+stopOpacity
+strikethroughPosition
+strikethrough-position
+strikethroughThickness
+strikethrough-thickness
+strokeDasharray
+strokeDashoffset
+stroke-dashoffset
+strokeLinecap
+strokeLinejoin
+strokeMiterlimit
+stroke-miterlimit
+strokeOpacity
+strokeWidth
+textAnchor
+textDecoration
+text-decoration
+transformOrigin
+underlinePosition
+underlineThickness
+unicodeBidi
+unicodeRange
+unitsPerEm
+vAlphabetic
+v-alphabetic
+vIdeographic
+v-ideographic
+vMathematical
+v-mathematical
+vectorEffect
+vertOriginX
+vertOriginY
+wordSpacing
+writingMode
+xmlnsXlink
+:if(C1(e,a.value,a.defaultValue,a.defaultValue,a.checked,a.defaultChecked,a.type,a.name),t=a.name,a.type===
+&&t!=null){for(a=e;a.parentNode;)a=a.parentNode;for(a=a.querySelectorAll('input[name=
+:Pu(e,a.value,a.defaultValue);break e;case
+onClickCapture
+onDoubleClick
+onDoubleClickCapture
+onMouseDown
+onMouseDownCapture
+onMouseMove
+onMouseMoveCapture
+onMouseUpCapture
+onMouseEnter
+)),e=!l;break e;default:e=!1}if(e)return null;if(a&&typeof a!=
+||typeof window.document>
+,ln,ln),window.removeEventListener(
+in e?e.clipboardData:window.clipboardData}}),jo=st(zo),To=w({},Ya,{data:0}),s0=st(To),Oo={Esc:
+ArrowRight
+ScrollLock
+Unidentified
+:String.fromCharCode(e)):e.type===
+in e?-e.wheelDeltaY:
+in document&&(un=document.documentMode);var Vo=Jt&&
+:return null;case
+:if(!(t.ctrlKey||t.altKey||t.metaKey)||t.ctrlKey&&t.altKey){if(t.char&&1<t.char.length)return t.char;if(t.which)return String.fromCharCode(t.which)}return null;case
+?null:t.data;default:return null}}var ko={color:!0,date:!0,datetime:!0,
+);b0.setAttribute(
+?(A0(),sn=t,rn=a,sn.attachEvent(
+||e.contentEditable===
+in l&&Q1(l)?l={start:l.selectionStart,end:l.selectionEnd}:(l=(l.ownerDocument&&l.ownerDocument.defaultView||window).getSelection(),l={anchorNode:l.anchorNode,anchorOffset:l.anchorOffset,focusNode:l.focusNode,focusOffset:l.focusOffset}),fn&&on(fn,l)||(fn=l,l=a1(Z1,
++t,a}var Al={animationend:Xa(
+AnimationEnd
+AnimationIteration
+AnimationStart
+Transition
+TransitionRun
+TransitionStart
+TransitionCancel
+TransitionEnd
+AnimationEvent
+TransitionEvent
+animationend
+animationiteration
+animationstart
+transitionrun
+transitionstart
+transitioncancel
+transitionend
+,t),$u(t,l.value,l.defaultValue,l.checked,l.defaultChecked,l.type,l.name,!0),ri(t);break;case
+,t),e0(t,l.value,l.defaultValue,l.children),ri(t)}a=l.children,typeof a!=
+||t.textContent===
+,t),l.onScrollEnd!=null&&le(
+){if(t===0){Ce=Bt(e.nextSibling);break e}t--}else a!==
+?n:null}if(n){Ce=Bt(n.nextSibling),l=n.data===
+)return pe(m,h,_i(v),j);if(v.$$typeof===Ee)return pe(m,h,ji(m,v),j);Hi(m,v)}return typeof v==
+in t){a={};for(var l in t)l!==
+,{bubbles:!0,cancelable:!0,message:typeof e==
+in l){var c={};for(var u in l)u!==
+||typeof i.getSnapshotBeforeUpdate==
+&&(t.flags|=4),typeof i.getSnapshotBeforeUpdate==
+stylesheet
+,e=e.removeChild(e.firstChild);break;case
+)try{l()}catch(n){Se(e,t,n)}finally{e.refCleanup=null,e=e.alternate,e!=null&&(e.refCleanup=null)}else if(typeof a==
+?a.ownerDocument.body:a).insertBefore(e,t):(t=a.nodeType===9?a.body:a.nodeName===
+:Au(e);break;default:e.textContent=
+)[0],(!i||i[H]||i[Ue]||i.namespaceURI===
+||i.hasAttribute(
+));if(c){for(var u=0;u<c.length;u++)if(i=c[u],i.getAttribute(
+?null:a.href)&&i.getAttribute(
+)===(a.rel==null?null:a.rel)&&i.getAttribute(
+)===(a.title==null?null:a.title)&&i.getAttribute(
+))){for(u=0;u<c.length;u++)if(i=c[u],i.getAttribute(
++a.content)&&i.getAttribute(
+)===(a.name==null?null:a.name)&&i.getAttribute(
+)===(a.property==null?null:a.property)&&i.getAttribute(
+)===(a.httpEquiv==null?null:a.httpEquiv)&&i.getAttribute(
+?c.setProperty(
+selectionStart
+);return a.name=t.name,a.value=t.value,e.id&&a.setAttribute(
+&&(u.preventDefault(),o=c?Ws(n,c):new FormData(n),Cc(a,{pending:!0,data:o,method:n.method,action:i},i,o))},currentTarget:n}]})}}for(var ou=0;ou<J1.length;ou++){var fu=J1[ou],Rf=fu.toLowerCase(),_f=fu[0].toUpperCase()+fu.slice(1);Lt(Rf,
+onAnimationIteration
+onAnimationStart
+onTransitionRun
+onTransitionStart
+onTransitionCancel
+onTransitionEnd
+onMouseLeave
+onPointerEnter
+pointerout
+pointerover
+onPointerLeave
+change click focusin focusout input keydown keyup selectionchange
+onBeforeInput
+compositionend
+onCompositionEnd
+compositionend focusout keydown keypress keyup mousedown
+onCompositionStart
+compositionstart focusout keydown keypress keyup mousedown
+onCompositionUpdate
+compositionupdate focusout keydown keypress keyup mousedown
+&&(Hf.has(a)||du(a,!1,e),du(a,!0,e))});var t=e.nodeType===9?e:e.ownerDocument;t===null||t[t1]||(t[t1]=!0,du(
+touchstart
+lostpointercapture
+pointercancel
+pointerdown
+pointermove
+beforetoggle
+,p,a,z),g.target=pe,g.relatedTarget=v,j=null,Be(z)===y&&(Q=new Q(m,h+
+,J,a,z),Q.target=v,Q.relatedTarget=pe,j=Q),pe=j,p&&J)t:{for(Q=p,m=J,h=0,v=Q;v;v=Vl(v))h++;for(v=0,j=m;j;j=Vl(j))v++;for(;0<h-v;)Q=Vl(Q),h--;for(;0<v-h;)m=Vl(m),v--;for(;h--;){if(Q===m||m!==null&&Q===m.alternate)break t;Q=Vl(Q),m=Vl(m)}Q=null}else Q=null;p!==null&&$s(O,g,p,Q,!1),J!==null&&pe!==null&&$s(O,pe,J,Q,!0)}}e:{if(g=y?tn(y):window,p=g.nodeName&&g.nodeName.toLowerCase(),p===
+)var _=g0;else if(v0(g))if(p0)_=Io;else{_=Wo;var ee=Jo}else p=g.nodeName,!p||p.toLowerCase()!==
+:(v0(ee)||ee.contentEditable===
+compositionupdate
+in fa?fa.value:fa.textContent,pl=!0)),ee=a1(y,Z),0<ee.length&&(Z=new s0(Z,e,null,a,z),O.push({event:Z,listeners:ee}),X?Z.data=X:(X=m0(a),X!==null&&(Z.data=X)))),(X=Vo?Qo(e,a):Zo(e,a))&&(Z=a1(y,
+beforeinput
+)){e.removeAttribute(a);break}if(l==null||typeof l==
+){e.removeAttribute(a);break}l=fi(
++l),e.setAttribute(a,l);break;case
+formAction
+){e.setAttribute(a,
+);break}else typeof i==
+,n.formEncType,n,null),ge(e,t,
+,n.formMethod,n,null),ge(e,t,
+,n.formTarget,n,null)):(ge(e,t,
+defaultValue
+defaultChecked
+){e.removeAttribute(
++l),e.setAttributeNS(
+contentEditable
+spellCheck
+autoReverse
+externalResourcesRequired
+preserveAlpha
+?e.setAttribute(a,
++l):e.removeAttribute(a);break;case
+allowFullScreen
+disablePictureInPicture
+disableRemotePlayback
+formNoValidate
+noValidate
+playsInline
+):e.removeAttribute(a);break;case
+:l===!0?e.setAttribute(a,
+?e.setAttribute(a,l):e.removeAttribute(a);break;case
+&&!isNaN(l)&&1<=l?e.setAttribute(a,l):e.removeAttribute(a);break;case
+||isNaN(l)?e.removeAttribute(a):e.setAttribute(a,l);break;case
+xlinkArcrole
+xlinkTitle
+textContent
+&&e.removeEventListener(t,i,n),typeof l==
+&&i!==null&&(a in e?e[a]=null:e.hasAttribute(a)&&e.removeAttribute(a)),e.addEventListener(t,l,n);break e}a in e?e[a]=l:l===!0?e.setAttribute(a,
+,e);var l=!1,n=!1,i;for(i in a)if(a.hasOwnProperty(i)){var c=a[i];if(c!=null)switch(i){case
+dangerouslySetInnerHTML
+,e);var u=i=c=n=null,o=null,y=null;for(l in a)if(a.hasOwnProperty(l)){var z=a[l];if(z!=null)switch(l){case
+,e),l=c=i=null;for(n in a)if(a.hasOwnProperty(n)&&(u=a[n],u!=null))switch(n){case
+,e),i=n=l=null;for(c in a)if(a.hasOwnProperty(c)&&(u=a[c],u!=null))switch(c){case
+:for(o in a)if(a.hasOwnProperty(o)&&(l=a[o],l!=null))switch(o){case
+:for(y in a)if(a.hasOwnProperty(y)&&(l=a[y],l!=null))switch(y){case
+:var n=null,i=null,c=null,u=null,o=null,y=null,z=null;for(p in a){var O=a[p];if(a.hasOwnProperty(p)&&O!=null)switch(p){case
+:o=O;default:l.hasOwnProperty(p)||ge(e,t,p,null,l,O)}}for(var g in l){var p=l[g];if(O=a[g],l.hasOwnProperty(g)&&(p!=null||O!=null))switch(g){case
+:p=c=u=g=null;for(i in a)if(o=a[i],a.hasOwnProperty(i)&&o!=null)switch(i){case
+:p=o;default:l.hasOwnProperty(i)||ge(e,t,i,null,l,o)}for(n in l)if(i=l[n],o=a[n],l.hasOwnProperty(n)&&(i!=null||o!=null))switch(n){case
+:p=g=null;for(u in a)if(n=a[u],a.hasOwnProperty(u)&&n!=null&&!l.hasOwnProperty(u))switch(u){case
+:break;default:ge(e,t,u,null,l,n)}for(c in l)if(n=l[c],i=a[c],l.hasOwnProperty(c)&&(n!=null||i!=null))switch(c){case
+:for(var J in a)if(g=a[J],a.hasOwnProperty(J)&&g!=null&&!l.hasOwnProperty(J))switch(J){case
+:e.selected=!1;break;default:ge(e,t,J,null,l,g)}for(o in l)if(g=l[o],p=a[o],l.hasOwnProperty(o)&&g!==p&&(g!=null||p!=null))switch(o){case
+:for(var Q in a)g=a[Q],a.hasOwnProperty(Q)&&g!=null&&!l.hasOwnProperty(Q)&&ge(e,t,Q,null,l,g);for(y in l)if(g=l[y],p=a[y],l.hasOwnProperty(y)&&g!==p&&(g!=null||p!=null))switch(y){case
+||typeof t.dangerouslySetInnerHTML==
+?e===bu?!1:(bu=e,!0):(bu=null,!1)}var lr=typeof setTimeout==
+?setTimeout:void 0,Qf=typeof clearTimeout==
+?clearTimeout:void 0,nr=typeof Promise==
+?Promise:void 0,Zf=typeof queueMicrotask==
+?queueMicrotask:typeof nr<
+&&c.rel.toLowerCase()===
+||a.removeChild(c),c=u}}if(n===0){e.removeChild(i),Jn(t);return}n--}else a===
+:if(a.rel.toLowerCase()===
+:if(!e.hasAttribute(
+:if(i=e.getAttribute(
+data-precedence
+?null:n.href)||e.getAttribute(
+)!==(n.crossOrigin==null?null:n.crossOrigin)||e.getAttribute(
+:if(e.hasAttribute(
+),(i!==(n.src==null?null:n.src)||e.getAttribute(
+)!==(n.type==null?null:n.type)||e.getAttribute(
+)!==(n.crossOrigin==null?null:n.crossOrigin))&&i&&e.hasAttribute(
+)&&!e.hasAttribute(
+&&e.getAttribute(
+)return null;for(;e.nodeType!==3;)if((e.nodeType!==1||e.nodeName!==
+,l)};a.addEventListener(
+?E2(t):ua.r(e)}var Ql=typeof document>
+&&(n+='[crossorigin=
+&&a&&a.imageSrcSet?(n+='[imagesrcset=
+]',typeof a.imageSizes==
+&&(n+='[imagesizes=
+&&a&&a.imageSrcSet?void 0:e,as:t},a),Ct.set(i,e),l.querySelector(n)!==null||t===
+&&l.querySelector(Yn(i))||t===
+paintworklet
+serviceworker
+sharedworker
+,href:e},t),Ct.set(i,e),a.querySelector(n)===null)){switch(l){case
+;var c=n.get(i);if(!c){var u={loading:0,preload:null};if(c=l.querySelector(Yn(i)))u.loading=5;else{e=w({rel:
+,e),a.head.appendChild(i)),i={type:
+:return typeof a.precedence==
+?(t=Zl(a.href),a=fl(n).hoistableStyles,l=a.get(t),l||(l={type:
+&&typeof a.precedence==
+){e=Zl(a.href);var i=fl(n).hoistableStyles,c=i.get(e);if(c||(n=n.ownerDocument||n,c={type:
+));return null;case
+?(t=kl(a),a=fl(n).hoistableScripts,l=a.get(t),l||(l={type:
+),l.preload=t,t.addEventListener(
+:var l=e.querySelector('style[data-href~=
+,n),c1(l,a.precedence,e),t.instance=l;case
+,l),e.head.appendChild(n),t.instance=n);case
+&&i.getAttribute(
+?e.querySelector(
+:if(typeof t.precedence!=
+:return e=t.disabled,typeof t.precedence==
+,t),e.addEventListener(
+link[data-precedence],style[data-precedence]
+||c.getAttribute(
+)&&(a.set(c.dataset.precedence,c),l=c)}l&&a.set(null,l)}n=t.instance,c=n.getAttribute(
+),i=a.get(c)||l,i===l&&a.set(null,n),a.set(c,n),this.count++,l=s1.bind(this),n.addEventListener(
+,l),n.addEventListener(
+ratechange
+touchcancel
+volumechange
+selectionchange
+compositionstart
+beforeblur
+fullscreenchange
+hashchange
+selectstart
+mouseenter
+mouseleave
+pointerenter
+pointerleave
+gotpointercapture
+)c||jr(a);else if(c){var u=null;if(i&&i.hasAttribute(
+)){if(n=i,c=i[Qe]||null)u=c.formAction;else if(Cu(n)!==null)continue}else u=c.action;typeof u==
+);const V=document.querySelector(
+),E=V?.nonce||V?.getAttribute(
+;if(document.querySelector(`link[href=
+),ie.crossOrigin=
+,ie.href=w,E&&ie.setAttribute(
+,E),document.head.appendChild(ie),K)return new Promise((be,Le)=>{ie.addEventListener(
+,be),ie.addEventListener(
+).trim(),B3=s=>{for(const b in s)if(b.startsWith(
+currentColor
+,strokeLinejoin:
+);return typeof b==
+||!s)return s;var S=s[Symbol.toPrimitive];if(S!==void 0){var f=S.call(s,b);if(typeof f!=
+https://github.com/ValentinTorassa
+https://www.linkedin.com/in/valetorassa/
+https://www.youtube.com/@vtcibersecurity
+https://tiktok.com/@vtsecurity
+https://instagram.com/vtsecurity
+https://x.com/ValenSecurity
+Audit Evidence
+,icon:so}],Vt={openSecurityLabs:{name:
+https://github.com/ValentinTorassa/Open-Security-Labs
+,languageColor:
+Cybersecurity
+,featured:!0,previewImage:i5,siteHref:
+https://github.com/ValentinTorassa/VT-Terminal-Project
+https://github.com/ValentinTorassa/VT-IDE-Project
+GitHub Actions
+},secretShare:{name:
+https://github.com/ValentinTorassa/VT-SecretShare
+JavaScript
+One-time secrets
+},autoConfine:{name:
+https://github.com/ValentinTorassa/AutoConfine
+}},u5=[{...Vt.openSecurityLabs,description:
+,architecture:
+}},{...Vt.terminal,description:
+}},{...Vt.ide,description:
+}},{...Vt.secretShare,description:
+}},{...Vt.autoConfine,description:
+}}],s5=[{...Vt.openSecurityLabs,description:
+}}],r5={es:{documentTitle:
+,seo:{description:
+,languageLabel:
+,spanishLabel:
+,englishLabel:
+,closeMenuLabel:
+Experiencia
+#experience
+Charlas y proyectos
+,heroSocialLabel:
+,terminalLines:[{prompt:
+Cybersecurity Engineer + Backend Engineer
+Go, Cloud Security, Linux, Networking, OAuth/OIDC, MCP, AWS IAM
+CompTIA Security+, AWS CCP, Linux FCA, HCIA Datacom
+Arquitectura de software, backend, seguridad cloud y compliance técnico.
+Combino arquitectura de software, desarrollo backend, seguridad cloud, Linux, redes y compliance para construir y operar sistemas seguros desde el diseño. Trabajo especialmente sobre identidad, permisos, datos sensibles, auditoría, observabilidad, infraestructura y confiabilidad operativa.
+En Teramot desarrollo el backend en Go de Aleph, trabajo sobre arquitectura y seguridad en AWS, y convierto requisitos SOC 2 e ISO/IEC 27001 en implementaciones técnicas verificables.
+Seguridad cloud y compliance
+Lidero la estrategia técnica de ciberseguridad y compliance en Teramot, integrando controles SOC 2 e ISO/IEC 27001 en infraestructura y producto.
+Arquitectura backend en Go
+Soy arquitecto principal de Aleph, una plataforma backend que expone datos empresariales de forma segura a agentes de IA: archivos, bases de datos y APIs.
+Operaciones de seguridad y hardening cloud
+AWS ECS/Fargate, IAM, SSO, CloudTrail, GuardDuty, OIDC en GitHub Actions, secretos, remediación e instrumentación con OpenTelemetry.
+// experiencia
+Trayectoria profesional
+Cybersecurity Engineer & Software Engineer
+nov. 2025 — actualidad
+Liderazgo técnico de ciberseguridad y compliance en una startup de IA. Arquitectura principal de Aleph, un backend en Go para el acceso seguro y escalable a datos empresariales consumidos por agentes de IA.
+PostgreSQL
+OpenTelemetry
+Cybersecurity & Compliance Analyst
+Estructuración del área de seguridad, automatización de controles, evidencia de auditoría y hardening de infraestructura AWS para datos sensibles usados por agentes de IA.
+AWS Security
+Data Protection
+Analista de Ciberseguridad
+Consulting IT
+Estrategia de seguridad para clientes de outsourcing, arquitectura de red segura, hardening, automatización y operación SOC con Sophos Central, Avast Business y Nagios.
+Networking
+,hideCompanyLabel:!0},{role:
+Universidad Abierta Interamericana
+Acompañamiento académico en arquitectura de procesadores, jerarquía de memoria, I/O y conceptos de sistemas de bajo nivel.
+Low-level systems
+CPU Architecture
+,hideCompanyLabel:!0}]},education:{eyebrow:
+Academia y certificaciones
+Certificaciones
+Ingeniería en Sistemas Informáticos
+Analista de Sistemas Informáticos
+CompTIA Security+
+SY0-701 · vigente hasta feb. 2029
+Operaciones, riesgo, arquitectura de seguridad y fundamentos de respuesta a incidentes.
+AWS Certified Cloud Practitioner
+CLF-C02 · vigente hasta jul. 2028
+Conceptos cloud, seguridad, servicios, facturación y responsabilidad compartida en AWS.
+Linux Foundation Certified IT Associate
+LFCA · vigente hasta abr. 2028
+Linux, cloud, DevOps, fundamentos de seguridad y sistemas de TI modernos.
+Huawei HCIA Datacom
+Huawei Certified ICT Associate · Datacom
+Routing, switching, redes IP y fundamentos de conectividad empresarial.
+Stack operativo
+Tecnologías y prácticas presentes en producto, seguridad cloud, auditorías y operación en producción.
+Seguridad cloud
+Seguridad e infraestructura AWS para workloads de producto, datos sensibles y despliegues auditables.
+Compliance engineering
+Controles implementados en sistemas, evidencia, poblaciones de auditoría y remediación técnica.
+compliance
+Arquitectura backend
+Servicios en Go para APIs, eventos, autenticación, observabilidad y contratos compartidos con frontend.
+Sistemas y redes
+Administración Linux, redes, VPNs, firewalls, monitoreo y troubleshooting operativo.
+Charlas, reconocimiento y proyectos abiertos
+Speaking y reconocimiento
+Repositorios destacados
+Proyecto destacado
+Charlas y reconocimientos anteriores
+Ver agenda oficial
+Abrir Open Security Labs
+Abrir repositorio
+,forksLabel:
+,updatedLabel:
+,githubProfileLabel:
+,projectDetailsLabel:
+,closeProjectLabel:
+,problemLabel:
+,architectureLabel:
+,securityLabel:
+,visitProjectLabel:
+,recognitions:[{event:
+Abstraction Leaks: Why Understanding Linux Internals Still Matters
+Próxima charla
+Vincular Inteligente 2026
+Seguridad con IA
+Monitoreo inteligente, respuesta temprana y automatización aplicada a defensa.
+CyberSecTuc Meetup #3
+La realidad de un Ingeniero en Ciberseguridad
+Charla sobre carrera, criterio técnico y trabajo práctico en seguridad.
+Expositor Distinguido en Seguridad Informática
+Reverse shells aplicadas a pruebas de penetración y análisis ofensivo.
+Mejor Exposición
+Investigación sobre botnets, comportamiento distribuido y taxonomía de amenazas.
+Rosario, Argentina · conversaciones técnicas sobre seguridad cloud, backend, compliance, agentes de IA, Linux y arquitectura de sistemas.
+Enviar email
+Copiar email
+Email copiado
+Perfiles sociales
+Ver en YouTube
+Disponible para conversaciones técnicas
+Seguridad · sistemas · open source
+Volver arriba
+Valentin Torassa Colombero · Cybersecurity & Backend
+Cybersecurity and backend engineer focused on cloud security, Go architecture, Linux, technical compliance, and systems for AI agents.
+Experience
+Software architecture, backend, cloud security, and technical compliance.
+I combine software architecture, backend development, cloud security, Linux, networking, and compliance to build and operate secure-by-design systems. My work focuses on identity, permissions, sensitive data, auditability, observability, infrastructure, and operational reliability.
+At Teramot, I develop Aleph’s Go backend, work across AWS architecture and security, and translate SOC 2 and ISO/IEC 27001 requirements into verifiable technical implementations.
+Cloud security and compliance
+I lead Teramot’s technical cybersecurity and compliance strategy, embedding SOC 2 and ISO/IEC 27001 controls into infrastructure and product.
+Backend architecture in Go
+I am the principal architect of Aleph, a backend platform that securely exposes enterprise data to AI agents across files, databases, and APIs.
+Security operations and cloud hardening
+AWS ECS/Fargate, IAM, SSO, CloudTrail, GuardDuty, GitHub Actions OIDC, secrets, remediation, and OpenTelemetry instrumentation.
+// experience
+Professional experience
+Technical cybersecurity and compliance leadership at an AI startup. Principal architecture of Aleph, a Go backend that gives AI agents secure, scalable access to enterprise data.
+Cybersecurity Analyst
+Security strategy for outsourcing clients, secure network architecture, hardening, automation, and SOC operations with Sophos Central, Avast Business, and Nagios.
+Academic support across processor architecture, memory hierarchies, I/O, and low-level systems concepts.
+Education and certifications
+Academic background
+Certifications
+Information Systems Engineering
+Final year
+Information Systems Analyst
+SY0-701 · valid through Feb. 2029
+Security operations, risk, architecture, and incident response fundamentals.
+CLF-C02 · valid through Jul. 2028
+AWS cloud concepts, security, services, billing, and shared responsibility.
+LFCA · valid through Apr. 2028
+Linux, cloud, DevOps, security fundamentals, and modern IT systems.
+Routing, switching, IP networking, and enterprise connectivity fundamentals.
+Operational stack
+Technologies and practices used across product engineering, cloud security, audits, and production operations.
+Cloud security
+AWS security and infrastructure for product workloads, sensitive data, and auditable deployments.
+System-level controls, evidence, audit populations, and technical remediation.
+Backend architecture
+Go services for APIs, events, authentication, observability, and shared frontend contracts.
+Systems and networks
+Linux administration, networking, VPNs, firewalls, monitoring, and operational troubleshooting.
+Talks, recognition, and open projects
+Speaking and recognition
+Featured repositories
+Featured project
+Previous talks and recognition
+View official schedule
+Open Open Security Labs
+Open repository
+Friday, July 24, 2026 · 10:00. A talk on why understanding kernels, processes, memory, and networking still matters behind modern abstractions.
+Upcoming talk
+Security with AI
+Intelligent monitoring, early response, and automation applied to defensive security.
+The reality of working as a Cybersecurity Engineer
+A practical talk about career development, technical judgment, and security work.
+Distinguished Speaker in Information Security
+Reverse shells applied to penetration testing and offensive analysis.
+Best Presentation
+Research on botnets, distributed behavior, and threat taxonomy.
+Rosario, Argentina · technical conversations about cloud security, backend systems, compliance, AI agents, Linux, and systems architecture.
+Send email
+Copy email
+Email copied
+Social profiles
+Watch on YouTube
+Open to technical conversations
+Security · systems · open source
+Back to top
+https://valentorassa.com/
+)return s;const b=window.localStorage.getItem(
+?b:window.navigator.language.toLowerCase().startsWith(
+,s),document.querySelector('link[rel=
+]')?.setAttribute(
+]',C.seo.description),ll('meta[property=
+]',C.documentTitle),ll('meta[property=
+]',C.documentTitle),ll('meta[name=
+]',C.seo.description)},[C.documentTitle,C.seo.description,C.seo.locale,s]),se.useEffect(()=>()=>{be.current!==void 0&&globalThis.clearTimeout(be.current)},[]),se.useEffect(()=>{if(!w)return;const A=ze=>{ze.key===
+&&K(!1)},W=ze=>{Le.current?.contains(ze.target)||K(!1)},oe=()=>{window.matchMedia(
+).matches&&K(!1)};return document.addEventListener(
+,A),document.addEventListener(
+,W),window.addEventListener(
+,oe),()=>{document.removeEventListener(
+,A),document.removeEventListener(
+,W),window.removeEventListener(
+);if(ne){const d=ne.getBoundingClientRect(),T=window.innerHeight*.56,B=Math.min(Math.max((T-d.top)/Math.max(d.height,1),0),1),L=[...ne.querySelectorAll(
+)];let R=-1;L.forEach((I,k)=>{I.getBoundingClientRect().top<=T&&(R=k)}),ne.style.setProperty(
+,B.toString()),U(I=>I===R?I:R)}V(M),f(d=>d===q?d:q)},ze=()=>{W===void 0&&(W=window.requestAnimationFrame(oe))};oe(),window.addEventListener(
+,ze,{passive:!0}),window.addEventListener(
+,ze);const nt=new ResizeObserver(ze);return nt.observe(document.body),()=>{window.removeEventListener(
+,ze),window.removeEventListener(
+,ze),nt.disconnect(),W!==void 0&&window.cancelAnimationFrame(W)}},[C.navItems]);const te=A=>new Intl.DateTimeFormat(s===
+);W.value=_u,W.setAttribute(
+,document.body.appendChild(W),W.select(),A=document.execCommand(
+),W.remove()}A&&(x(!0),be.current!==void 0&&globalThis.clearTimeout(be.current),be.current=globalThis.setTimeout(()=>x(!1),2200))},[de,..._e]=C.research.recognitions,lt=de?.icon;return r.jsxs(
+noopener noreferrer
+?C.header.englishLabel:C.header.spanishLabel}`,title:s===
+?C.header.englishLabel:C.header.spanishLabel,children:s===
+mobile-navigation
+,lines:C.terminalLines}),r.jsx(
+AWS SECURITY
+VT SECURITY
+experience
+,children:C.experience.eyebrow}),r.jsx(
+,{children:C.experience.title})]}),r.jsx(
+,children:C.experience.items.map((A,W)=>r.jsxs(La,{as:
+,{src:A.logo,alt:A.hideCompanyLabel?A.company:
+})}),A.hideCompanyLabel?null:r.jsx(
+,{children:A.description}),r.jsx(A1,{tags:A.tags})]})]},`${A.company}-${A.role}`))})]}),r.jsxs(
+,{children:C.education.academicTitle})]}),r.jsx(
+,{src:C.education.institutionLogo,alt:
+,{children:C.education.certificationsTitle})]}),r.jsx(
+,children:C.education.certifications.map(A=>{const W=A.icon;return r.jsxs(
+,{children:C.research.speakingTitle})]}),r.jsxs(
+,children:C.research.previousTalksLabel}),_e.map(A=>r.jsxs(
+,{children:C.research.repositoriesTitle})]}),r.jsx(
+,children:C.research.repos.map(A=>{if(A.featured&&A.previewImage&&A.siteHref)return r.jsxs(
+,{src:A.previewImage,alt:
+,{children:C.research.featuredLabel}),r.jsxs(
+,{style:{backgroundColor:A.languageColor}}),A.language]})]}),r.jsx(
+,{children:A.description}),r.jsxs(
+,{children:C.research.openRepoLabel})]})]})]})]},A.name);const W=dt[A.name]??{stars:A.stars,forks:A.forks,updatedAt:A.updatedAt};return r.jsx(
+,{style:{backgroundColor:A.languageColor}}),A.language]}),r.jsx(
+,{children:A.description}),r.jsx(A1,{tags:A.tags}),r.jsxs(
+,{title:C.research.starsLabel,children:[r.jsx(f4,{
+,{title:C.research.forksLabel,children:[r.jsx(e4,{
+}),C.research.updatedLabel,
+,onClick:oe=>{Oe.current=oe.currentTarget,ie(A.name)},children:[r.jsx(
+,{children:C.research.projectDetailsLabel}),r.jsx(qr,{
+}),C.research.githubProfileLabel]})]})]})]}),r.jsxs(
+}),C.contact.availability]}),r.jsxs(
+}),C.contact.emailLabel]}),r.jsxs(
+,children:E?C.contact.copiedEmailLabel:C.contact.copyEmailLabel})]})]}),r.jsx(
+?C.contact.youtubeLabel:A.name})]},A.name))})})]})]}),r.jsx(
+,new Date().getFullYear(),
+,children:[C.footer.backToTopLabel,r.jsx(H3,{
+){x.preventDefault(),S();return}if(x.key!==
+||!N.current)return;const w=[...N.current.querySelectorAll('button, a[href], [tabindex]:not([tabindex=
+])')].filter(ie=>!ie.hasAttribute(
+,E),()=>{window.cancelAnimationFrame(V),document.body.style.overflow=F,document.removeEventListener(
+aria-labelledby
+,{style:{backgroundColor:s.languageColor}}),s.language]}),r.jsx(
+,{children:s.description}),r.jsx(A1,{tags:s.tags})]}),r.jsxs(
+,b.architecture]}),r.jsx(
+,{children:s.caseStudy.architecture})]}),r.jsxs(
+,fetchPriority:
+in window)){F(!0);return}const x=new IntersectionObserver(([w])=>{w.isIntersecting&&(F(!0),x.disconnect())},{rootMargin:
+});return x.observe(E),()=>{x.disconnect()}},[]),s===
+||b?.effectiveType===
+,f=s.deviceMemory!==void 0&&s.deviceMemory<=4||navigator.hardwareConcurrency<=4||b?.effectiveType===
+||window.matchMedia(
+)})},w=()=>{E||(E=!0,typeof window.requestIdleCallback==
+in window?(V=new IntersectionObserver(([Y])=>{Y.isIntersecting&&(V?.disconnect(),w())},{threshold:.12}),V.observe(K)):w(),()=>{N=!0,V?.disconnect(),U!==void 0&&window.cancelIdleCallback(U),F!==void 0&&globalThis.clearTimeout(F),f?.()}},[]),r.jsx(
+).matches,N=window.matchMedia(
+,depth:!0,stencil:!1,powerPreference:S===
+high-performance
+?270:135);for(let G=0;G<nt.length;G+=3){const H=G+11;nt[G]=(ze(H)-.5)*17,nt[G+1]=(ze(H*1.7)-.5)*8,nt[G+2]=-3.5-ze(H*2.3)*7}const Me=new s.BufferGeometry;Me.setAttribute(
+,new s.BufferAttribute(nt,3));const M=new s.Points(Me,Ee);E.add(M),Y.push(Me);const D=new Float32Array(S===
+?126:72);for(let G=0;G<D.length;G+=3){const H=G+1,fe=H%2===0?-1:1;D[G]=fe*(2.2+(Math.sin(H*14.1)+1)*1.5),D[G+1]=-1.7+(Math.sin(H*9.7)+1)*2.05,D[G+2]=-2.5-(Math.sin(H*5.3)+1)*1.5}const q=new s.BufferGeometry;q.setAttribute(
+,new s.BufferAttribute(ul,3));const sl=new s.LineSegments(Dt,Le);E.add(sl),Y.push(Dt);const ra=new s.OctahedronGeometry(.058,0),ti=(S===
+});return ci.observe(b),document.addEventListener(
+,ol),N&&!f&&window.addEventListener(
+,en,{passive:!0}),()=>{Rt(),ii.disconnect(),ci.disconnect(),document.removeEventListener(
+,ol),window.removeEventListener(
+re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().
+;t==="image"&&a&&a.imageSrcSet?(n+=
++xt(a.imageSrcSet)+
+,typeof a.imageSizes=="string"&&(n+=
++xt(a.imageSizes)+
+link[rel="stylesheet"][data-precedence],style[data-precedence]
+[rel="stylesheet"]
+meta[name="description"]
+meta[property="og:description"]
+meta[name="twitter:description"]

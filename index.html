@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Icono-->
-    <link rel="icon" type="image/x-icon" href="/linux_icon.png">
+    <link rel="icon" type="image/x-icon" href="linux_icon.png">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -271,26 +271,57 @@
                     </div>
                 </div>
 
-                <div class="md:col-span-4 bg-slate-950/70 border border-slate-850 p-6 rounded-xl space-y-4">
-                    <h3 class="font-bold text-xs font-mono uppercase tracking-wider text-cyber-cyan">Trayectoria Rápida</h3>
-                    <ul class="space-y-3.5 text-xs">
-                        <li class="flex justify-between border-b border-slate-900 pb-2">
-                            <span class="text-slate-400">Educación</span>
-                            <span class="text-slate-200 text-right">UPAO</span>
-                        </li>
-                        <li class="flex justify-between border-b border-slate-900 pb-2">
-                            <span class="text-slate-400">Especialidad Principal</span>
-                            <span class="text-slate-200 text-right">Dev Fullstack / Analista de Seguridad</span>
-                        </li>
-                        <li class="flex justify-between border-b border-slate-900 pb-2">
-                            <span class="text-slate-400">Enfoque de Seguridad</span>
-                            <span class="text-slate-200 text-right">Pentesting / SOC</span>
-                        </li>
-                        <li class="flex justify-between">
-                            <span class="text-slate-400">Base Operativa</span>
-                            <span class="text-slate-200 text-right">Trujillo, Perú</span>
-                        </li>
-                    </ul>
+                <div class="md:col-span-4 bg-slate-950/70 border border-slate-850 p-6 rounded-xl space-y-6">
+                    <h3 class="font-bold text-xs font-mono uppercase tracking-wider text-cyber-cyan border-b border-slate-900 pb-2">Educación & Academia</h3>
+                    
+                    <div class="space-y-4">
+                        <!-- UPAO Card -->
+                        <div class="flex gap-4 items-start">
+                            <!-- Logo space / placeholder -->
+                            <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-cyber-cyan/5 border border-cyber-cyan/20 flex items-center justify-center relative overflow-hidden group hover:border-cyber-cyan/50 transition-colors">
+                                <!-- Glowing light indicator -->
+                                <span class="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-cyber-cyan animate-pulse"></span>
+                                <!-- Stylized UPAO vector/text representation, tinted neon cyan -->
+                                <div class="w-7 h-7 overflow-hidden relative flex items-center justify-center">
+                                    <img src="upao.png" class="w-7 h-7 object-contain relative -left-12" style="filter: drop-shadow(48px 0 0 #54e6d6); min-width: 28px; min-height: 28px;">
+                                </div>
+                            </div>
+                            <div class="space-y-0.5 text-xs">
+                                <h4 class="font-bold text-slate-100 font-heading">UPAO</h4>
+                                <p class="text-slate-400 font-sans leading-tight">Bachiller en Ingeniería de Sistemas</p>
+                                <p class="text-[10px] font-mono text-slate-500">2020 - 2025 · Grado en trámite</p>
+                            </div>
+                        </div>
+
+                        <!-- Enter Tech School Card -->
+                        <div class="flex gap-4 items-start">
+                            <!-- Logo space / placeholder -->
+                            <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-cyber-purple/5 border border-cyber-purple/20 flex items-center justify-center relative overflow-hidden group hover:border-cyber-purple/50 transition-colors">
+                                <!-- Glowing light indicator -->
+                                <span class="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-cyber-purple animate-pulse"></span>
+                                <!-- Terminal icon, tinted neon purple -->
+                                <div class="w-6 h-6 overflow-hidden relative flex items-center justify-center">
+                                    <img src="enter.png" class="w-6 h-6 object-contain relative -left-10" style="filter: drop-shadow(40px 0 0 #8b7cff); min-width: 24px; min-height: 24px;">
+                                </div>
+                            </div>
+                            <div class="space-y-0.5 text-xs">
+                                <h4 class="font-bold text-slate-100 font-heading">Enter Tech School</h4>
+                                <p class="text-slate-400 font-sans leading-tight">Especialización en Ciberseguridad</p>
+                                <p class="text-[10px] font-mono text-slate-500">2024 - Presente · Cyber-101 / 201</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-slate-900 pt-4 space-y-3 text-xs">
+                        <div class="flex justify-between">
+                            <span class="text-slate-400 font-mono text-[10px] uppercase">Base Operativa</span>
+                            <span class="text-slate-200 text-right font-sans">Trujillo, Perú</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-400 font-mono text-[10px] uppercase">Enfoque</span>
+                            <span class="text-slate-200 text-right font-sans">DevSecOps / Pentesting</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -347,7 +378,7 @@
         <!-- PROYECTOS DESTACADOS SECTION -->
         <section id="proyectos" class="reveal space-y-8 scroll-mt-20">
             <div class="flex items-center space-x-4">
-                <h2 class="text-2xl font-bold text-white tracking-tight font-heading">Proyectos Destacados</h2>
+                <h2 class="text-2xl font-bold text-white tracking-tight font-heading">Proyectos</h2>
                 <div class="h-[1px] bg-slate-800 flex-grow"></div>
             </div>
 
@@ -473,7 +504,7 @@
                 <!-- Skill Card 1: Desarrollo Core -->
                 <div class="cyber-card p-6 rounded-xl space-y-4">
                     <h3 class="font-bold text-sm font-mono uppercase tracking-wider text-cyber-cyan border-b border-slate-900 pb-2 flex items-center gap-2">
-                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+                        <svg class="w-4 h-4 text-cyber-cyan" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
                         Desarrollo Core
                     </h3>
                     <ul class="text-xs text-slate-400 space-y-3 font-sans">
@@ -518,7 +549,7 @@
                 <!-- Skill Card 2: Ciberseguridad -->
                 <div class="cyber-card p-6 rounded-xl space-y-4">
                     <h3 class="font-bold text-sm font-mono uppercase tracking-wider text-cyber-purple border-b border-slate-900 pb-2 flex items-center gap-2">
-                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                        <svg class="w-4 h-4 text-cyber-purple" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                         Ciberseguridad
                     </h3>
                     <ul class="text-xs text-slate-400 space-y-3 font-sans">
@@ -563,51 +594,131 @@
 
             <!-- Certifications Subgrid -->
             <div class="space-y-6">
-                <h3 class="font-bold text-base text-white tracking-tight font-heading">Certificaciones Destacadas</h3>
+                <h3 class="font-bold text-base text-white tracking-tight font-heading">Certificaciones</h3>
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Cert 1 (CAPT) -->
-                    <div class="cyber-card p-6 rounded-xl space-y-4 flex flex-col justify-between">
-                        <div class="space-y-2">
+                    <div class="cyber-card p-6 rounded-xl space-y-4 flex flex-col justify-between hover:border-cyber-cyan/40 transition-colors">
+                        <div class="space-y-3">
                             <div class="flex items-center justify-between">
                                 <span class="text-[10px] font-mono text-cyber-cyan uppercase tracking-wider">Seguridad Web</span>
-                                <span class="text-[9px] font-mono text-slate-500 font-mono">Hackviser</span>
+                                <span class="text-[9px] font-mono text-slate-500">Hackviser (2025)</span>
                             </div>
-                            <h4 class="font-bold text-white text-sm leading-snug font-heading">CAPT - Certified Junior Application Pentester</h4>
-                            <p class="text-xs text-slate-400 leading-relaxed font-sans">
+                            <div class="flex items-start gap-3">
+                                <div class="w-10 h-10 rounded bg-cyber-cyan/5 border border-cyber-cyan/20 flex items-center justify-center flex-shrink-0">
+                                    <div class="w-5 h-5 overflow-hidden relative flex items-center justify-center">
+                                        <img src="hackviser.png" class="w-5 h-5 object-contain relative -left-8" style="filter: drop-shadow(32px 0 0 #54e6d6); min-width: 20px; min-height: 20px;">
+                                    </div>
+                                </div>
+                                <h4 class="font-bold text-white text-sm leading-snug font-heading">CAPT - Certified Junior Application Pentester</h4>
+                            </div>
+                            <p class="text-xs text-slate-400 leading-relaxed font-sans text-justify">
                                 Acreditación enfocada en pentesting práctico, explotación ética de fallas críticas en aplicaciones y lógica defensiva de código.
                             </p>
                         </div>
-                        <span class="text-[10px] font-mono text-cyber-cyan">Vigente</span>
+                        <span class="text-[10px] font-mono text-cyber-cyan flex items-center gap-1.5">
+                            <span class="w-1.5 h-1.5 rounded-full bg-cyber-cyan animate-pulse"></span>
+                            Vigente
+                        </span>
                     </div>
 
                     <!-- Cert 2 (Wallarm) -->
-                    <div class="cyber-card p-6 rounded-xl space-y-4 flex flex-col justify-between">
-                        <div class="space-y-2">
+                    <div class="cyber-card p-6 rounded-xl space-y-4 flex flex-col justify-between hover:border-cyber-purple/40 transition-colors">
+                        <div class="space-y-3">
                             <div class="flex items-center justify-between">
                                 <span class="text-[10px] font-mono text-cyber-purple uppercase tracking-wider">Seguridad de APIs</span>
-                                <span class="text-[9px] font-mono text-slate-500 font-mono">Wallarm</span>
+                                <span class="text-[9px] font-mono text-slate-500">Wallarm (2025)</span>
                             </div>
-                            <h4 class="font-bold text-white text-sm leading-snug font-heading">API Security Certified Associate</h4>
-                            <p class="text-xs text-slate-400 leading-relaxed font-sans">
+                            <div class="flex items-start gap-3">
+                                <div class="w-10 h-10 rounded bg-cyber-purple/5 border border-cyber-purple/20 flex items-center justify-center flex-shrink-0">
+                                    <div class="w-5 h-5 overflow-hidden relative flex items-center justify-center">
+                                        <img src="wallarm.png" class="w-5 h-5 object-contain relative -left-8" style="filter: drop-shadow(32px 0 0 #8b7cff); min-width: 20px; min-height: 20px;">
+                                    </div>
+                                </div>
+                                <h4 class="font-bold text-white text-sm leading-snug font-heading">API Security Certified Associate</h4>
+                            </div>
+                            <p class="text-xs text-slate-400 leading-relaxed font-sans text-justify">
                                 Formación especializada en mitigación del OWASP API Security Top 10 y hardening de pasarelas de microservicios.
                             </p>
                         </div>
-                        <span class="text-[10px] font-mono text-cyber-purple">Vigente</span>
+                        <span class="text-[10px] font-mono text-cyber-purple flex items-center gap-1.5">
+                            <span class="w-1.5 h-1.5 rounded-full bg-cyber-purple animate-pulse"></span>
+                            Vigente
+                        </span>
                     </div>
 
                     <!-- Cert 3 (Google Cloud) -->
-                    <div class="cyber-card p-6 rounded-xl space-y-4 flex flex-col justify-between">
-                        <div class="space-y-2">
+                    <div class="cyber-card p-6 rounded-xl space-y-4 flex flex-col justify-between hover:border-cyber-amber/40 transition-colors">
+                        <div class="space-y-3">
                             <div class="flex items-center justify-between">
                                 <span class="text-[10px] font-mono text-cyber-amber uppercase tracking-wider">Seguridad Cloud</span>
-                                <span class="text-[9px] font-mono text-slate-500 font-mono">Google Cloud</span>
+                                <span class="text-[9px] font-mono text-slate-500">Google Cloud (2026)</span>
                             </div>
-                            <h4 class="font-bold text-white text-sm leading-snug font-heading">Security in Google Cloud Specialization</h4>
-                            <p class="text-xs text-slate-400 leading-relaxed font-sans">
+                            <div class="flex items-start gap-3">
+                                <div class="w-10 h-10 rounded bg-cyber-amber/5 border border-cyber-amber/20 flex items-center justify-center flex-shrink-0">
+                                    <div class="w-5 h-5 overflow-hidden relative flex items-center justify-center">
+                                        <img src="google.png" class="w-5 h-5 object-contain relative -left-8" style="filter: drop-shadow(32px 0 0 #f0b45b); min-width: 20px; min-height: 20px;">
+                                    </div>
+                                </div>
+                                <h4 class="font-bold text-white text-sm leading-snug font-heading">Security in Google Cloud Specialization</h4>
+                            </div>
+                            <p class="text-xs text-slate-400 leading-relaxed font-sans text-justify">
                                 Especialización en gestión de accesos identitarios (IAM), auditoría de políticas y seguridad de cargas de trabajo cloud.
                             </p>
                         </div>
-                        <span class="text-[10px] font-mono text-cyber-amber">Coursera / Google Cloud</span>
+                        <span class="text-[10px] font-mono text-cyber-amber flex items-center gap-1.5">
+                            <span class="w-1.5 h-1.5 rounded-full bg-cyber-amber animate-pulse"></span>
+                            Vigente
+                        </span>
+                    </div>
+
+                    <!-- Cert 4 (Azure AI) -->
+                    <div class="cyber-card p-6 rounded-xl space-y-4 flex flex-col justify-between hover:border-indigo-500/40 transition-colors">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-[10px] font-mono text-indigo-400 uppercase tracking-wider">IA & ML</span>
+                                <span class="text-[9px] font-mono text-slate-500">Microsoft (2025)</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-10 h-10 rounded bg-indigo-500/5 border border-indigo-500/20 flex items-center justify-center flex-shrink-0">
+                                    <div class="w-5 h-5 overflow-hidden relative flex items-center justify-center">
+                                        <img src="azure.png" class="w-5 h-5 object-contain relative -left-8" style="filter: drop-shadow(32px 0 0 #818cf8); min-width: 20px; min-height: 20px;">
+                                    </div>
+                                </div>
+                                <h4 class="font-bold text-white text-sm leading-snug font-heading">Microsoft Azure AI Essentials</h4>
+                            </div>
+                            <p class="text-xs text-slate-400 leading-relaxed font-sans text-justify">
+                                Fundamentos prácticos de Inteligencia Artificial, entrenamiento de modelos de Machine Learning y servicios cognitivos.
+                            </p>
+                        </div>
+                        <span class="text-[10px] font-mono text-indigo-400 flex items-center gap-1.5">
+                            <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse"></span>
+                            Vigente
+                        </span>
+                    </div>
+
+                    <!-- Cert 5 (Cisco) -->
+                    <div class="cyber-card p-6 rounded-xl space-y-4 flex flex-col justify-between hover:border-emerald-500/40 transition-colors">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-[10px] font-mono text-emerald-400 uppercase tracking-wider">Defensa & Redes</span>
+                                <span class="text-[9px] font-mono text-slate-500">Cisco (2023)</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-10 h-10 rounded bg-emerald-500/5 border border-emerald-500/20 flex items-center justify-center flex-shrink-0">
+                                    <div class="w-5 h-5 overflow-hidden relative flex items-center justify-center">
+                                        <img src="cisco.png" class="w-5 h-5 object-contain relative -left-8" style="filter: drop-shadow(32px 0 0 #34d399); min-width: 20px; min-height: 20px;">
+                                    </div>
+                                </div>
+                                <h4 class="font-bold text-white text-sm leading-snug font-heading">Cisco Certified CyberOps Associate</h4>
+                            </div>
+                            <p class="text-xs text-slate-400 leading-relaxed font-sans text-justify">
+                                Capacitación en operaciones SOC, análisis de riesgos informáticos, detección de intrusiones en red y respuesta ante incidentes.
+                            </p>
+                        </div>
+                        <span class="text-[10px] font-mono text-emerald-400 flex items-center gap-1.5">
+                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                            Vigente
+                        </span>
                     </div>
                 </div>
             </div>
